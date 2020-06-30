@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag</title>
+    <style>
+      table {
+        width: 70%; /*표의 너비*/
+        border: 1px solid #222; /*1px 짜리 표 테두리*/
+        border-collapse: collapse; /*중복되는 표와 셀의 테두리를 한 줄로 표시*/
+      }
+      thead {
+        background: #eee;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 5px; /*셀 테두리와 셀 내용 사이의 여백*/
+        font-size: 0.7em;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <b><abbr title="Internet of Things">IoT</abbr></b>
+      란 각종 사물에 센서와 통신 기능을 내장해 인터넷에 연결하는 기술을
+      의미한다.
+    </p>
+    <hr />
+    <br />
+    <p>
+      내가 경험한 가장 흥미진진한 일은 누군가를 만나는 일이다 - 영화,<cite
+        >'비포선셋'
+      </cite>
+      중
+    </p>
+    <hr />
+    <br />
+    <pre><code>funciton savetheLocal(){
+        }</code>
+    </pre>
+    <hr />
+    <br />
+    <p>웹 화면을 다시 불러오려면 <kbd>F5 </kbd>키를 누릅니다.</p>
+    <hr />
+    <br />
+    <p>가격 : 13,000원 <small>(부가세별도)</small></p>
+    <hr />
+    <br />
+    <p>
+      물의 화학식은 <b>H<sub>2</sub>O</b>이고 에너지 방정식
+      <b>E = mc<sup>2</sup></b
+      >이다.
+    </p>
+    <hr />
+    <br />
+    <p>
+      <s>34,000원</s> → <strong><u>19,000원</u></strong>
+    </p>
+    <hr />
+    <br />
+    <h1>관광 안내 전화</h1>
+    <p>
+      한국관광공사에서는 전국의 관광안내소와 공동으로 여러분의 여행편의를 위해
+      관광안내정화 1330 서비스를 연중무휴 실시하고 있습니다.
+    </p>
+    <p>
+      1330에는 해당 지역의 지도와 관광 가이드북, 관광안내소를 대신할수 있을
+      정도의 다양한 정보가 있습니다. 원하는 관광지는 물론이며 숙박,교통,음식점
+      등의 자세한 정보를 한국어를 비롯한 영어,중국어,일어의 3개 국어로도 이용
+      가능합니다.
+    </p>
+    <ul>
+      <li>일반 전화 : (국번없이) 1330</li>
+      <li>휴대 전화 : 064-1330</li>
+    </ul>
+    <hr />
+    <br />
+    <h1>1박 2일 가족 여행 코스</h1>
+    <ul>
+      <li>
+        1일차
+        <ol type="a">
+          <li>해녀박물관</li>
+          <li>낚시체험</li>
+        </ol>
+      </li>
+      <li>
+        2일차
+        <ol type="a" start="3">
+          <li>용눈이오름</li>
+          <li>민장굴</li>
+          <li>카약체험</li>
+        </ol>
+      </li>
+    </ul>
+    <hr />
+    <br />
+    <h1>제주 올레</h1>
+    <br />
+    <ul>
+      <li>
+        <dl>
+          <dt>올레 1코스</dt>
+          <dd>코스 : 시흥 초등학교 옆 - 광치기 해변</dd>
+          <dd>거리 : 14.6km(4~5시간)</dd>
+          <dd>난이도 : 중</dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt>올레 2코스</dt>
+          <dd>코스 : 광치기 해변 - 온평포구</dd>
+          <dd>거리 : 14.5km(4~5시간)</dd>
+          <dd>난이도 : 중</dd>
+        </dl>
+      </li>
+    </ul>
+    <hr />
+    <br />
+    <h2>국가 전염병 위기 경보 수준</h2>
+    <ol type="A">
+      <li>관심</li>
+      <li>주의</li>
+      <li>경계</li>
+      <li>심각</li>
+    </ol>
+    <hr />
+    <br />
+    <h2>표를 만들어 보자!!</h2>
+
+    <p id="summary">
+      다음 표는 MS.Kwon's personal information을 정리한 것입니다.
+    </p>
+    <table aria-describedby="summary">
+      <caption>
+        MS's personal information
+      </caption>
+      <!-- <caption>
+                <strong>MS.Kwon</strongMS></strong>
+                <p>Personal information</p>
+            </caption> -->
+      <tr>
+        <th>이름</th>
+        <td>권용수</td>
+        <th>연락처</th>
+        <td>010-6569-****</td>
+      </tr>
+      <tr>
+        <th>주소</th>
+        <td colspan="3">대전광역시 유성구</td>
+      </tr>
+      <tr>
+        <th>자기소개</th>
+        <td colspan="3">웹 개발자를 희망하고 있습니다.</td>
+      </tr>
+    </table>
+    <hr />
+    <br />
+    <table>
+      <caption>
+        재무상태표
+      </caption>
+      <tr>
+        <td rowspan="2">자산:현금<br />현금 외 자산</td>
+        <td>부채:차입금</td>
+      </tr>
+      <tr>
+        <td>자본:자본금,이익잉여금</td>
+      </tr>
+    </table>
+    <hr />
+    <br />
+    <table>
+      <caption>
+        제주특별자치고 학교현황(2015.4.1 기준)
+      </caption>
+      <colgroup>
+        <col style="background-color: burlywood;" />
+        <col span="3" style="background-color: aqua;" />
+        <col style="background-color: blueviolet;" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>구분</th>
+          <th>학교수</th>
+          <th>학급수</th>
+          <th>학생수</th>
+          <th>교원수</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>유치원</th>
+          <td>117</td>
+          <td>117</td>
+          <td>117</td>
+          <td>117</td>
+        </tr>
+        <tr>
+          <th>초등학교</th>
+          <td>117</td>
+          <td>117</td>
+          <td>117</td>
+          <td>117</td>
+        </tr>
+        <tr>
+          <th>중학교</th>
+          <td>117</td>
+          <td>117</td>
+          <td>117</td>
+          <td>117</td>
+        </tr>
+        <tr>
+          <th>고등학교</th>
+          <td>117</td>
+          <td>117</td>
+          <td>117</td>
+          <td>117</td>
+        </tr>
+        <tr>
+          <th>특수학교</th>
+          <td>117</td>
+          <td>117</td>
+          <td>117</td>
+          <td>117</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>합계</th>
+          <td>304</td>
+          <td>304</td>
+          <td>304</td>
+          <td>304</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+    <br />
+    <table>
+      <caption>
+        colgroup 연습
+      </caption>
+      <colgroup>
+        <col style="background-color: burlywood;" />
+        <col span="3" />
+        <!-- <col span="2" style="background-color: cadetblue;" /> -->
+        <!-- <col style="background-color: coral;" /> -->
+      </colgroup>
+      <tr>
+        <td>null</td>
+        <td>null</td>
+        <td>null</td>
+        <td>null</td>
+      </tr>
+      <tr>
+        <td>null</td>
+        <td>null</td>
+        <td>null</td>
+        <td>null</td>
+      </tr>
+    </table>
+    <hr />
+    <br />
+  </body>
+</html>
