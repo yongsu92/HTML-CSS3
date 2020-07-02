@@ -5,12 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image & Hyperlink</title>
     <style>
-      img {
-        width: 30em;
+      /* img {
+        width: 25em;
+      } */
+      a {
+        text-decoration: none;
+        color: black;
       }
     </style>
   </head>
   <body>
-    <img src="images/ogu_dj.png" alt="오구는 용감해" />
+    <img
+      id="ogu"
+      src="images/ogu_dj.png"
+      width="400"
+      height="400"
+      alt="오구는 용감해"
+    />
+    <figure>
+      <img
+        src="https://postfiles.pstatic.net/MjAxOTA5MDlfMTEz/MDAxNTY4MDE5NTA5MjEy.DwFjcaqP6Jblg90-1P1SKT7t3eVM8vzB2dSn-ylr6jgg.C32c4-cAtMi_1MSVVx1JD5luZYAQuC2G0mGV2Nw8tf4g.JPEG.theworkscompany/KakaoTalk_20190909_175003965.jpg?type=w966"
+        width="400"
+        height="400"
+        alt="아기오구"
+      />
+      <figcaption>아기 오구는 계획이 무엇인지 아직 모른다.</figcaption>
+    </figure>
+    <hr />
+    <br />
+    <a
+      href="https://blog.naver.com/PostView.nhn?blogId=theworkscompany&logNo=221643761515&from=search&redirect=Log&widgetTypeCall=true&directAccess=false"
+      target="_blank"
+    >
+      <figure>
+        <img
+          src="https://blogfiles.pstatic.net/MjAxOTA5MDVfMjkz/MDAxNTY3NjQ3MjA2MDY0.6zGH9FxYEZx4d4mViSt8_Nak9m8JktjsfSl1NILNu2Ug.r6PCzjtk9LOXfIcou9QXInFmBgWrAin6uGuB0-TcLfIg.PNG.theworkscompany/%EC%98%A4%EA%B5%AC.png"
+          alt="오구 패밀리"
+        />
+        <figcaption>오구 패밀리</figcaption>
+      </figure>
+    </a>
+    <hr />
+    <br />
+    <a
+      href="https://blog.naver.com/PostView.nhn?blogId=theworkscompany&logNo=221643761515&from=search&redirect=Log&widgetTypeCall=true&directAccess=false"
+      target="_top"
+    >
+      오구 패밀리
+    </a>
+    <hr />
+    <br />
+    <h1>앵커 만들기</h1>
+    <p>
+      앵커를 만들어 보자!!!
+    </p>
+    <ul id="menu">
+      <li><a href="#content1">menu 1</a></li>
+      <li><a href="#content2">menu 2</a></li>
+      <li><a href="#content3">menu 3</a></li>
+    </ul>
+    <h3 id="content1">menu 1</h3>
+    <p>이것은 메뉴 1번 설명</p>
+    <p><a href="#menu">menu</a></p>
+    <h3 id="content2">menu 2</h3>
+    <p>이것은 메뉴 2번 설명</p>
+    <p><a href="#menu">menu</a></p>
+    <h3 id="content3">menu 3</h3>
+    <p>이것은 메뉴 3번 설명</p>
+    <p><a href="#ogu">ogu</a></p>
   </body>
 </html>
