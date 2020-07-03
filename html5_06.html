@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="search.php" method="POST" autocomplete="off">
+      <label>
+        아이디(6자이상)
+        <input type="text" title="아이디" />
+      </label>
+      <br />
+      <label for="user-id">아이디(6자이상)</label>
+      <input type="text" id="user-id" />
+    </form>
+    <hr />
+    <br />
+    <h3>수강 분야(다수 선택 가능)</h3>
+    <ul>
+      <li><input type="checkbox" value="grm" />문법</li>
+      <li><input type="checkbox" value="wr" />작문</li>
+      <li><input type="checkbox" value="rd" />독해</li>
+    </ul>
+    <h3>수강 분야(1과목만 선택 가능)</h3>
+    <ul>
+      <li>
+        <label><input type="radio" name="subject" value="en" />영어</label>
+      </li>
+      <li>
+        <label><input type="radio" name="subject" value="ch" />중국어</label>
+      </li>
+      <li>
+        <label><input type="radio" name="subject" value="jp" />일본어</label>
+      </li>
+    </ul>
+    <hr />
+    <br />
+    <form>
+      <fieldset>
+        <legend>개인 정보</legend>
+        <ul>
+          <li>
+            <label for="name">이름</label>
+            <input type="text" id="name" />
+          </li>
+          <li>
+            <label for="email">메일 주소</label>
+            <input type="text" id="email" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>로그인 정보</legend>
+        <ul>
+          <li>
+            <label for="user_id">아이디</label>
+            <input type="text" id="user_id" />
+          </li>
+          <li>
+            <label for="user_pw">비밀번호</label>
+            <input type="text" id="user_pw" />
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+    <hr />
+    <br />
+    <h1>회원 가입</h1>
+    <form>
+      <fieldset>
+        <legend>필수정보</legend>
+        <ul>
+          <li>
+            <label for="user_name">이름 : </label>
+            <input type="text" id="user_name" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>선택 정보</legend>
+        <ul>
+          <li>
+            <label for="user_birth">생일 : </label>
+            <input type="text" id="user_birth" placeholder="연도-월-일" />
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+    <hr>
+    <br>
+    <form>
+        <ul>
+            <li>
+                <input type="range">
+            </li>
+            <li>
+                <input type="number">
+            </li>
+            <li>
+                <input type="submit">
+            </li>
+            <li>
+                <input type="file">
+            </li>
+            <li>
+                <input type="reset">
+            </li>
+            <li>
+                <input type="image" src="images/ogu.jpg" width="80">
+            </li>
+        </ul>
+    </form>
+  </body>
+</html>

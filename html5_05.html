@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Map link</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script/modernizr-custom.js"></script>
+  </head>
+  <body>
+    <a href="https://www.instagram.com/moonlab_studio/" target="_blank">
+      <img
+        src="https://blogfiles.pstatic.net/MjAxOTA5MDVfMjkz/MDAxNTY3NjQ3MjA2MDY0.6zGH9FxYEZx4d4mViSt8_Nak9m8JktjsfSl1NILNu2Ug.r6PCzjtk9LOXfIcou9QXInFmBgWrAin6uGuB0-TcLfIg.PNG.theworkscompany/%EC%98%A4%EA%B5%AC.png"
+        alt="문랩스튜디오"
+      />
+    </a>
+    <hr />
+    <br />
+    <img src="images/kids.jpg" alt="image map" usemap="#kids" />
+    <map name="kids">
+      <area
+        shape="rect"
+        coords="10,10,160,200"
+        href="https://www.instagram.com/moonlab_studio/"
+        target="_blank"
+        alt="문랩스튜디오"
+      />
+      <area
+        shape="rect"
+        coords="220,10,380,200"
+        href="https://www.instagram.com/p/CCICqzEHH65/"
+        target="_blank"
+        alt="문랩스튜디오-oguogu"
+      />
+    </map>
+    <hr />
+    <br />
+    <h1>SVG(Scalable vector grapics)</h1>
+    <img src="images/muffin.svg" />
+    <script>
+      if (!Modernizer.svg) {
+        $("img").attr("src", "images/muffin.png");
+      }
+    </script>
+    <hr />
+    <br />
+  </body>
+</html>
