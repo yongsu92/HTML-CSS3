@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="hidden" name="이름" value="서버로 넘길 값" />
+    <hr />
+    <br />
+    <input type="text" name="name" size="5" value="name" maxlength="5" /> <br />
+    <input type="text" name="name" size="5" placeholder="name" maxlength="5" />
+    <br />
+    <hr />
+    <br />
+    <form>
+      <fieldset>
+        <label for="user_id">아이디</label>
+        <input type="text" id="user_id" size="10" />
+        <label for="user_pw">비밀번호</label>
+        <input type="password" id="user_pw" size="10" />
+        <input type="submit" value="Login" />
+      </fieldset>
+    </form>
+    <hr />
+    <br />
+    <input type="search" />
+    <input type="submit" value="검색" />
+    <input type="url" />
+    <input type="submit" value="검색" />
+    <input type="email" />
+    <input type="submit" value="검색" />
+    <input type="tel" />
+    <input type="submit" value="검색" />
+    <hr />
+    <br />
+    <h3>회원 가입</h3>
+    <form>
+      <fieldset>
+        <legend>로그인 정보</legend>
+        <label for="user_id">아이디</label>
+        <input type="text" /><br />
+        <label for="user_pw">비밀번호</label>
+        <input type="text" /><br />
+        <label for="user_pw_ch">비밀번호 확인</label>
+        <input type="text" />
+      </fieldset>
+      <fieldset>
+        <legend>개인 정보</legend>
+        <label for="user_name">이름</label>
+        <input type="text" /><br />
+        <label for="user_email">메일 주소</label>
+        <input type="email" /><br />
+        <label for="user_call">연락처</label>
+        <input type="tel" /><br />
+        <label for="user_blog">블로그/홈페이지</label>
+        <input type="url" />
+      </fieldset>
+      <input type="submit" value="가입하기" />
+    </form>
+    <hr />
+    <br />
+    <form>
+      <label>한 줄 댓글 : <input type="text" size="60" /></label>
+    </form>
+    <hr />
+    <br />
+    <b>주문 개수 : </b> <input type="number" min="1" max="5" value="1" />개
+    <hr />
+    <br />
+    <form>
+      <fieldset>
+        <legend>등록 정보</legend>
+        <ul>
+          <li>
+            <label for="member">참여인원<small>(최대10명)</small> </label>
+            <input
+              type="number"
+              id="member"
+              min="0"
+              max="10"
+              value="1"
+              step="1"
+            />
+          </li>
+          <li>
+            <label for="stuff">지원물품<small>(1인당 5개)</small> </label>
+            <input
+              type="number"
+              id="stuff"
+              min="0"
+              max="50"
+              value="1"
+              step="5"
+            />
+          </li>
+          <li>
+            <label for="level">희망 단계<small>(하,중,상)</small></label>
+            <input type="range" id="level" min="0" max="3" value="0" />
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+    <hr />
+    <br />
+    <form>
+      <fieldset>
+        <legend>신청 과목</legend>
+        <p>이 달에 신청할 과목을 선택하세요 (1과목만 가능)</p>
+        <label
+          ><input type="radio" name="subject" value="speaking" />회화</label
+        >
+        <label><input type="radio" name="subject" value="grammar" />문법</label>
+        <label><input type="radio" name="subject" value="writing" />작문</label>
+      </fieldset>
+      <fieldset>
+        <legend>메일링</legend>
+        <p>메일로 받고 싶은 뉴스 주제를 건택해 주세요 (복수 선택 가능)</p>
+        <label
+          ><input type="checkbox" name="mailing1" value="news" />해외
+          단신</label
+        >
+        <label
+          ><input type="checkbox" name="mailing2" value="dialog" />5분
+          회화</label
+        >
+        <label
+          ><input type="checkbox" name="mailing3" value="pops" />모닝팝스</label
+        >
+      </fieldset>
+      <fieldset>
+        <legend>과 티셔츠 설문</legend>
+        <p>올해 과 티를 만들려고 합니다. 원하는 색상을 추천해 주세요.</p>
+        <label>선호색상<input type="color" value="#ffffff" /></label>
+      </fieldset>
+      <fieldset>
+        <legend>복무 기간 선택</legend>
+        <label
+          ><input type="date" id="start" /> ~ <input type="date" id="end"
+        /></label>
+      </fieldset>
+    </form>
+    <hr />
+    <br />
+    <h3>원하는 대관시간을 선택하세요(오늘)</h3>
+    <form>
+      <fieldset>
+        <label
+          >시작 시간 <input type="time" id="start1" value="09:00" /> 종료 시간
+          <input type="time" id="end1" value="18:00"
+        /></label>
+      </fieldset>
+      <fieldset>
+        시작 시간
+        <input type="datetime-local" id="start2" value="2020-07-05T09:00" />
+        종료 시간
+        <input type="datetime-local" id="end2" value="2020-07-05T18:00" />
+      </fieldset>
+      <fieldset>
+        <p><b>메일링 리스트 등록</b></p>
+        <label
+          >메일 주소 :
+          <input type="eamil" />
+          <input type="submit" />
+          <input type="reset" value="다시입력" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>이미지 등록</p>
+        <input
+          type="image"
+          src="images/ogu.jpg"
+          width="300"
+          alt="이미지 등록"
+        />
+      </fieldset>
+      <fieldset>
+        <label for="user_id1">아이디 </label>
+        <input type="text" size="15" />
+        <label for="user_pw1">비밀번호</label>
+        <input type="password" size="15" />
+        <input type="image" id="butt" src="images/login.jpg" alt="login" />
+      </fieldset>
+      <fieldset>
+        <input type="button" value="새 탭 열기" onclick="window.open()" />
+      </fieldset>
+      <fieldset>
+        <label>첨부파일<input type="file" /></label>
+      </fieldset>
+    </form>
+    <form>
+      <fieldset>
+        <input type="button" value="닫기" onclick="window.close()" />
+      </fieldset>
+    </form>
+    <hr />
+    <br />
+    <h2>여름 방학 특강 신청</h2>
+    <form>
+      <fieldset>
+        <legend>수강과목</legend>
+        <label
+          >영어회화(초급)
+          <input type="text" value="오전 09:00 ~ 11:00" readonly
+        /></label>
+      </fieldset>
+      <fieldset>
+        <legend>신청서</legend>
+        <ul>
+          <li>
+            <label for="name">이름</label>
+            <input type="text" id="name" autofocus required />
+          </li>
+          <li>
+            <label for="stu-id">학번</label>
+            <input type="text" id="stu-id" placeholder="하이폰없이 입력" />
+          </li>
+          <li>
+            <label for="maj">학과</label>
+            <input type="text" id="maj" />
+          </li>
+        </ul>
+        <input type="submit" />
+      </fieldset>
+    </form>
+    <hr />
+    <br />
+    <div class="container">
+      <h1>상품주문서</h1>
+      <form>
+        <fieldset>
+          <legend>개인 정보</legend>
+          <ul>
+            <li>
+              <label for="name">이름</label>
+              <input
+                type="text"
+                id="name"
+                size="20"
+                placeholder="여백없이 입력"
+                required
+              />
+            </li>
+
+            <li>
+              <label for="tell">연락처</label>
+              <input
+                type="tel"
+                id="tell"
+                size="20"
+                placeholder="연락가능한 번호"
+                required
+              />
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>배송지 정보</legend>
+          <ul>
+            <li>
+              <label for="add">주소</label>
+              <input type="text" id="add" size="40" required />
+            </li>
+
+            <li>
+              <label for="tell2">전화번호</label>
+              <input type="tel" id="tell2" size="20" required />
+            </li>
+
+            <li>
+              <label for="memo">메 모</label>
+              <textarea id="memo" cols="40" rows="3"></textarea>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>주문 정보</legend>
+          <ul>
+            <li>
+              <label for="anti"
+                ><input type="checkbox" name="check1" />과테말라 안티구아 (100g)
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  step="1"
+                  value="0"
+                />개</label
+              >
+            </li>
+            <li>
+              <label for="man"
+                ><input type="checkbox" name="check2" />인도네시아 만델링 (100g)
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  step="1"
+                  value="0"
+                />개</label
+              >
+            </li>
+            <li>
+              <label for="tam"
+                ><input type="checkbox" name="check3" />탐나는도다(블렌딩)
+                (100g)
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  step="1"
+                  value="0"
+                />개</label
+              >
+            </li>
+          </ul>
+        </fieldset>
+        <input type="submit" value="주문하기" />
+        <input type="reset" value="다시작성" />
+      </form>
+    </div>
+  </body>
+</html>
