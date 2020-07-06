@@ -4,6 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .container{
+        width: 600px;
+        margin:0 auto;
+      }
+      ul{
+        list-style-type: none;
+      }
+      label.title{
+        font-weight: bold;
+        width: 80px;
+        float: left;
+      }
+      div.centered{
+        text-align: center;
+      }
+      fieldset{
+        margin: 15px 10px;
+      }
+      fieldset legend{
+        font-weight: bold;
+        font-size: 18px;
+        color: purple;
+      }
+      ul li{
+        margin-bottom: 10px;
+      }
+
+
+    </style>
   </head>
   <body>
     <input type="hidden" name="이름" value="서버로 넘길 값" />
@@ -233,10 +263,10 @@
           <legend>개인 정보</legend>
           <ul>
             <li>
-              <label for="name">이름</label>
+              <label for="per_name" class="title">이름</label>
               <input
                 type="text"
-                id="name"
+                id="per_name"
                 size="20"
                 placeholder="여백없이 입력"
                 required
@@ -244,7 +274,7 @@
             </li>
 
             <li>
-              <label for="tell">연락처</label>
+              <label for="tell" class="title">연락처</label>
               <input
                 type="tel"
                 id="tell"
@@ -259,17 +289,17 @@
           <legend>배송지 정보</legend>
           <ul>
             <li>
-              <label for="add">주소</label>
+              <label for="add" class="title">주소</label>
               <input type="text" id="add" size="40" required />
             </li>
 
             <li>
-              <label for="tell2">전화번호</label>
+              <label for="tell2" class="title">전화번호</label>
               <input type="tel" id="tell2" size="20" required />
             </li>
 
             <li>
-              <label for="memo">메 모</label>
+              <label for="memo" class="title">메 모</label>
               <textarea id="memo" cols="40" rows="3"></textarea>
             </li>
           </ul>
@@ -316,9 +346,32 @@
             </li>
           </ul>
         </fieldset>
-        <input type="submit" value="주문하기" />
-        <input type="reset" value="다시작성" />
+        <div class="centered">
+          <input type="submit" value="주문하기" />
+          <input type="reset" value="다시작성" />
+        </div>
       </form>
     </div>
+    <hr>
+    <br>
+    <form>
+      <fieldset>
+        <ul>
+            <li>
+              <label for="name2">이름 : </label>
+              <input type="text" id="name2" autofocus required>
+            </li>
+            <li>
+              <label for="nick">닉네임 : </label>
+              <input type="text" id="nick">
+            </li>
+            <li>
+              <label for="mail2">이메일 : </label>
+              <input type="text" id="mail2"required>
+            </li>
+        </ul>
+        
+      </fieldset>
+    </form>
   </body>
 </html>

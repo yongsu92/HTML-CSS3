@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multy data</title>
+    <style>
+      label {
+        float: left;
+      }
+      ul {
+        list-style-type: none;
+      }
+      ul li {
+        margin-bottom: 10px;
+      }
+      input {
+        margin: 0px 10px;
+      }
+      select {
+        margin: 0px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>여름방학 특강 신청</h3>
+    <form>
+      <fieldset>
+        <legend>수강 신청인</legend>
+        <ul>
+          <li>
+            <label for="code">학번 </label> <input type="text" id="code" />
+          </li>
+
+          <li>
+            <label for="name">이름 </label> <input type="text" id="name" />
+          </li>
+
+          <li>
+            <label for="major">학과</label>
+            <select id="major">
+              <optgroup label="공과대학">
+                <option value="archi">건축공학과</option>
+                <option value="machine">기계공학과</option>
+                <option value="indust">산업공학과</option>
+                <option value="elect">전기공학과</option>
+                <option value="chemi">화학공학과</option>
+                <option value="comput">컴퓨터공학과</option>
+              </optgroup>
+              <optgroup label="인문대학">
+                <option value="hist">역사학과</option>
+                <option value="lang">어문학부</option>
+                <option value="philo">철학</option>
+              </optgroup>
+            </select>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>학습단계</legend>
+        <select id="level">
+          <option value="elem">초급</option>
+          <option value="interm">중급</option>
+          <option value="exper">고급</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>수강 과목을 선택하세요</legend>
+        <label for="choose">관심분야</label>
+        <input type="choose" list="choice" />
+        <datalist id="choice">
+          <option value="grammer">문법</option>
+          <option value="speaking">회화</option>
+          <option value="writing">작문</option>
+        </datalist>
+      </fieldset>
+      <fieldset>
+        <legend>오구의 메모</legend>
+        <textarea name="memo" cols="60" rows="5">
+              오구는 언제나 용감하다.
+              오구는 멎지기 때문이다.
+          </textarea
+        >
+      </fieldset>
+      <fieldset>
+        <button type="submit" class="subm">
+          <img src="images/tick.png" alt="" /> 전송하기
+        </button>
+      </fieldset>
+    </form>
+    <form oninput="result.value = parseInt(num1.value) + parseInt(num2.value)">
+      <fieldset>
+        <input type="number" name="num1" value="0" /> +
+        <input type="number" name="num2" value="0" /> =
+        <output name="result" for="num"></output>
+      </fieldset>
+      <fieldset>
+        <label>30% </label>
+        <progress value="30" max="100"></progress>
+      </fieldset>
+      <fieldset>
+        <ul>
+          <li>
+            <label
+              >점유율 0.8
+              <meter value="0.8"></meter>
+            </label>
+          </li>
+
+          <li>
+            <label
+              >사용량 64%
+              <meter min="0" max="100" value="64"></meter>
+            </label>
+          </li>
+          <li>
+            <label>
+              트래픽 초과
+              <meter
+                min="1024"
+                max="10240"
+                low="2048"
+                high="8192"
+                value="9216"
+              ></meter>
+            </label>
+          </li>
+          <li>
+            <label
+              >적정한 트래픽
+              <meter value="0.5" optimum="0.8"></meter>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </body>
+</html>
