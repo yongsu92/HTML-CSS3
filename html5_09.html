@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <style>
+      ul li {
+        /* list-style-type: none; */
+      }
+      label {
+        float: left;
+      }
+      input {
+        margin: 0px 10px;
+      }
+      section{
+          width: 500px;
+          height: 550px;
+          padding: 15px;
+          border: 5px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>예약정보</h1>
+    <form>
+      <ul>
+        <li>
+          <label for="user_name">이 름</label>
+          <input type="text" id="user_name" size="20" required /><br />
+        </li>
+        <br />
+        <li>
+          <label for="user_ph">휴대폰</label>
+          <input type="tel" id="user_ph" size="20" required />
+        </li>
+        <br />
+        <li>
+          <label for="user_em">이메일</label>
+          <input type="email" id="user_em" size="20" required />
+        </li>
+      </ul>
+      <input type="submit" value="예약하기" />
+    </form>
+    <hr />
+    <br />
+    <section>
+        
+        <h1>프론트엔드 개발자 지원서</h1>
+        <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+        <hr />
+        <form>
+      <!-- <legend>개인정보</legend> -->
+      <h4>개인정보</h4>
+      <ul>
+        <li>
+          <label for="user_name2">이름</label>
+          <input
+            type="text"
+            id="user_name2"
+            size="20"
+            placeholder="공백없이 입력하세요"
+            required
+            autofocus
+            />
+        </li>
+        <li>
+            <label for="user_ph2">연락처</label>
+          <input type="tel" id="user_ph2" size="20" required />
+        </li>
+    </ul>
+      <!-- <legend>지원 분야</legend> -->
+      <h4>지원 분야</h4>
+      <ul>
+        <li>
+            <label
+            ><input type="radio" name="field" value="webpub" />웹
+            퍼블리싱</label
+            >
+        </li>
+        <li>
+            <label>
+                <input type="radio" name="field" value="webapp" />웹 애플리케이션
+                개발
+            </label>
+        </li>
+        <li>
+          <label>
+              <input type="radio" name="field" value="impdevenv" />개발 환경 개선
+            </label>
+        </li>
+      </ul>
+      <!-- <legend>지원 동기</legend> -->
+      <h4>지원 동기</h4>
+      <label>
+          <textarea
+          rows="5"
+          cols="60"
+          placeholder="본사 지원 동기를 간략히 써 주세요"
+          ></textarea>
+      </label>
+      <!-- <input type="submit" value="접수하기" /> -->
+      <div>
+          <button type="submit">접수하기</button>
+          <button type="reset">다시쓰기</button>
+        </div>
+    </form>
+</section>
+</body>
+</html>

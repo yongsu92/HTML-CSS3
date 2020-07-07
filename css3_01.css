@@ -1,0 +1,52 @@
+* {
+  /* 전체 선택자를 이용해서 문서의 스타일을 초기화*/
+  margin: 20px;
+  /* padding: 0; */
+}
+section {
+  width: 500px; /*너비*/
+  padding: 15px; /*테두리와 내용 사이의 여백 */
+  border: 5px solid gray;
+}
+
+h2 {
+  color: purple;
+}
+.brown-text {
+  color: brown;
+}
+.bold-text {
+  font-weight: bold;
+}
+h2.accent {
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+h3 {
+  color: blue; /*글자 색*/
+}
+
+p {
+  font-size: 0.9em; /* 글자 크기*/
+  font-family: 맑은고딕;
+  line-height: 2; /*줄간격*/
+  color: gray;
+  margin-left: 5px;
+}
+
+.green-text {
+  color: green;
+}
+
+#container {
+  width: 600px;
+  padding: 15px;
+  border: 1px dotted gray;
+}
+.underline {
+  text-decoration: underline;
+}
+#underline {
+  text-decoration: underline;
+}
