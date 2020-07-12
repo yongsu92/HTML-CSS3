@@ -42,14 +42,14 @@
       2. td : 셀을 만든다.
       3. th : 표에 제목 셀을 만든다.
             > aria-describedby 속성
-   1. colspan,rowspan : 행 또는 열 합쳐준다. th, td의 속성에서 합칠 셀의 개수를 넣어준다.
+   2. colspan,rowspan : 행 또는 열 합쳐준다. th, td의 속성에서 합칠 셀의 개수를 넣어준다.
         
             >  <th colspan = '합칠 셀의 개수'>
     
-   2. caption : 표의 제목을 붙일 때 사용한다. 제목은 표 위의 중앙에 표시된다. (table태그 안에 위치)
-   3. figcaption : caption과 마찬가지로 표에 제목을 붙일 때 사용한다. caption과 차이점은 위쪽 중앙에 표시되지 않고 표의 위에 설명 처럼 표시된다. (table태그 밖에 위치)
-   4. thread,tbody,tfoot : 제목,본문,요약 구조를 구성할 수 있다.
-   5. col,colgroup: 하나의 열에 스타일을 지정(col)하거나 열을 묶어서 스타일을 한꺼번에 지정(colgroup)해 준다. col의 span속성을 사용면 여러개의 열을 묶어서 스타일을 적용할 수 있다. colgroup태그 안에 있는col의 수는 열의 수와 같아야 한다.
+   3. caption : 표의 제목을 붙일 때 사용한다. 제목은 표 위의 중앙에 표시된다. (table태그 안에 위치)
+   4. figcaption : caption과 마찬가지로 표에 제목을 붙일 때 사용한다. caption과 차이점은 위쪽 중앙에 표시되지 않고 표의 위에 설명 처럼 표시된다. (table태그 밖에 위치)
+   5. thread,tbody,tfoot : 제목,본문,요약 구조를 구성할 수 있다.
+   6. col,colgroup: 하나의 열에 스타일을 지정(col)하거나 열을 묶어서 스타일을 한꺼번에 지정(colgroup)해 준다. col의 span속성을 사용면 여러개의 열을 묶어서 스타일을 적용할 수 있다. colgroup태그 안에 있는col의 수는 열의 수와 같아야 한다.
 
 
 
