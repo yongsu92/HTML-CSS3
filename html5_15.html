@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .accent {
+        font-weight: bold;
+        font-variant: small-caps;
+        color: red;
+      }
+      h2 {
+        color: blue;
+      }
+      h1 {
+        color: rgb(0, 100, 0);
+      }
+      .ital {
+        font: italic 20px/24px "맑은 고딕";
+      }
+      p.txt {
+        font: italic 12px/24px 돋움;
+      }
+      p {
+        line-height: e1.8;
+      }
+      a {
+        text-decoration: none;
+      }
+      .edited {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>세계 3대 미항</h1>
+    <div class="ital">
+      <p><span class="accent">시드니(Sydney)</span>, 호주</p>
+      <p>
+        <span class="accent">리우데자리네이루(Rio de Janeiro)</span>, 브라질
+      </p>
+      <p style="font-style: normal;">
+        <span class="accent">나폴리(Naples)</span>, 이탈리아
+      </p>
+    </div>
+    <hr />
+    <br />
+    <form>
+      <fieldset>
+        <legend>글자 속성 한번에 지정하기</legend>
+        <p class="txt">
+          여러 요소가 함께 사용된 문서 안에서 텍스트가 눈에 띄게 하려면 내용에
+          맞는 글꼴과 글자 크기, 그리고 글자색을 선택하는 것이 중요합니다.
+        </p>
+        <p>이럴 때 사용할 수 있는 것이 글꼴 속성입니다.</p>
+        <p style="font: caption;">[font:caption] 캡션에 어울리는 글꼴 스타일</p>
+        <p style="font: icon;">[font:icon] icon에 어울리는 글꼴 스타일</p>
+        <p style="font: menu;">
+          [font:menu] 드롭다운 메뉴에 어울리는 글꼴 스타일
+        </p>
+        <p style="font: message-box;">
+          [font:message-box] 대화 상자에 어울리는 글꼴 스타일
+        </p>
+        <p style="font: small-caption;">
+          [font:small-caption] 작은 캡션에 어울리는 글꼴 스타일
+        </p>
+        <p style="font: status-bar;">
+          [font:status-bar] 상태표시줄에 어울리는 글꼴 스타일
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>연습문제 p.227</legend>
+        <p>
+          웹 문서에 포함된 텍스트들은
+          <span class="accent ital">사용자의 글꼴을 이용해</span><br />
+          웹 브라우저 화면에 표시합니다.
+        </p>
+      </fieldset>
+      <fieldset>
+        <h1>세계 10대 슈퍼푸드</h1>
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="마늘"
+        />
+        <h2>마늘</h2>
+        <p>
+          마늘 특유의 아린 맛은 <span class="accent">알리신</span>이라는 성분
+          때문이다.
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>링크 텍스트에 밑줄 없애기</legend>
+        <h1>HTML5</h1>
+        <p>
+          다양한 기기로 인터넷에 접속할 수 있는 요즘,<br />
+          <span class="edited">HTML4</span>와 HTML5를 공부해야 할 때입니다.
+        </p>
+        <a href="https://html.spec.whatwg.org/" target="_black"
+          ><b>HTML5 표준 규약 살펴보기</b></a
+        >
+      </fieldset>
+    </form>
+  </body>
+</html>
