@@ -1,0 +1,28 @@
+/*text tranform*/
+
+.h1_tr,
+.tran2 {
+  text-transform: capitalize;
+}
+
+.tran1 {
+  text-transform: uppercase;
+}
+
+.shadow1 {
+  color: cornflowerblue;
+  text-shadow: 1px 1px;
+}
+.shadow2 {
+  color: white;
+  text-shadow: 2px 2px 3px #f00;
+}
+.shadow3 {
+  color: black;
+  text-shadow: 0 0 4px #cccccc, 0 -3px 4px #ffff33, 2px -7px 6px #ffdd33,
+    -2px -10px 11px #ff8800, 2px -15px 18px #ff2200;
+}
+
+.leg1 {
+  color: white;
+}
