@@ -128,7 +128,7 @@ header {
   left: 0;
   top: 63%;
   animation-name: titani-btn;
-  animation-duration: 2s;
+  animation-duration: 1.8s;
 }
 @keyframes titani-btn {
   0% {opacity: 0; top: 70%;}
