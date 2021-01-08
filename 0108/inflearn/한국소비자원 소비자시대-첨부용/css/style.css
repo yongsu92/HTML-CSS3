@@ -82,9 +82,6 @@ header {
 .main .inner .mainTitle {
   width: 653px;
   height: auto;
-  position: absolute;
-  top:30%;
-  left: 0;
 
 }
 
@@ -92,29 +89,58 @@ header {
   font-size: 50px;
   line-height: 1.3;
   color: #222222;
-  margin-bottom: 30px;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  animation-name: titani;
+  animation-duration: 1s;
+}
+
+@keyframes titani {
+  0% {opacity: 0; top: 0;}
+  30% {opacity: 0; top: 0;}
+  100% {opacity: 1; top: 30%;}
 }
 
 .main .inner .mainTitle p {
+  position: absolute;
+  left: 0;
+  top: 47%;
   font-size: 19px;
   line-height: 1.6;
-  margin-bottom: 50px;
+  animation-name: titani-p;
+  animation-duration: 0.7s;
+}
+
+@keyframes titani-p {
+  0% {opacity: 0; transform: scale(0);}
+  30% {opacity: 0; transform: scale(0);}
+  100% {opacity: 1; transform: scale(1);}
 }
 
 .main .inner .mainTitle .btn {
+  position: absolute;
   display:inline-block;
   padding: 15px 25px;
   font-size: 18px;
   color: #ffffff;
   background-color: #000000;
+  left: 0;
+  top: 63%;
+  animation-name: titani-btn;
+  animation-duration: 2s;
+}
+@keyframes titani-btn {
+  0% {opacity: 0; top: 70%;}
+  30% {opacity: 0; top: 70%;}
+  100% {opacity: 1; top: 63%;}
 }
 
 .may {
   position: absolute;
   width: 185px;
   height: 300px;
-  top: 5
-  0%;
+  top: 50%;
   right: 300px;
   transform: translateY(-50%);
 }
@@ -126,7 +152,15 @@ header {
   border-radius: 50%;
   background-color: #f57454;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  animation-name: may-a;
+  animation-duration: 1s;
+}
+
+@keyframes may-a {
+  0% {opacity: 0; transform: scale(0);}
+  30% {opacity: 0; transform: scale(0);}
+  100% {opacity: 1; transform: scale(1);}
 }
 
 .may strong {
@@ -140,24 +174,402 @@ header {
 }
 
 .may ul {
-  width: 185px;
+  width: 190px;
   height: auto;
   margin-bottom: 10px;
 }
 
-.map ul li {
+.may ul li {
   line-height: 40px;
-}
-
-.may ul li a {
-  display: block;
   color: #333;
   font-size:10px;
   letter-spacing: 5px;
   font-weight: 600;
   border-bottom: 1px solid #333;
+  animation-name: mayLi;
+  animation-duration: .5s;
+}
+@keyframes mayLi {
+  0% {opacity: 0; letter-spacing: -5px;}
+  30% {opacity: 0; letter-spacing: -5px;}
+  50% {opacity: 0; letter-spacing: -5px;}
+  100% {opacity: 1; letter-spacing: 5px;}
+}
+
+.may ul li:nth-child(2) {
+  animation-duration: 1.1s;
+  border-bottom: 1px solid #333;
+}
+.may ul li:nth-child(3) {
+  animation-duration: 1.4s;
+  border-bottom: 1px solid #333;
+}
+
+
+.may ul li a {
+  display: block;
+  
 }
 
 .may h3{
   font-size: 40px;
+  position: absolute;
+  top: 100%;
+  right: 25px;
+  animation-name: mayh3;
+  animation-duration: 1.8s;
+}
+
+@keyframes mayh3 {
+  0% {opacity: 0; top: 90%;}
+  30% {opacity: 0; top: 90%;}
+  100% {opacity: 1; top: 100%;}
+}
+
+/* section.happy */
+
+.happy {
+  width: 1400px;
+  margin: 0 auto;
+  color: #333;
+  margin-top: 100px;
+}
+
+.happy h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.happy .colortext {
+  color: #f57260;
+}
+
+.happy ul {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* 자식 요소에 float 속성을 주면 부모의 높이 값이 상실된다. */
+/* 이를 방지 하기 위해서는 overflow : hidden 값이 필요하다. */
+.happy ul li {
+  float: left;
+  width: 32.2%;
+  margin-right: 1.7%;
+  margin-bottom: 80px;
+  background-color: #c5cdbe;
+}
+
+.happy ul li:nth-child(3) {
+  margin-right: 0;
+  background-color: #dfcfcf;
+}
+
+
+.happy ul li:nth-child(2) {
+  background-color: #e59b90;
+}
+
+.happy ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0 50px 30px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.happy ul li p {
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+
+.happy ul li h3 {
+  font-size: 26px;
+  margin-bottom: 70px;
+}
+
+.happy ul li p.img {
+  width: 380px;
+  height: 250px;
+  margin-right: 0;
+  float: right;
+  overflow: hidden;
+}
+
+.happy ul li p.img img {
+  width: 100%;
+  /* 기본적으로 transition을 준다. */
+  transition: all 0.3s;
+}
+
+.happy ul li a::after{
+  content: '';
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 63%;
+  height: 2px;
+  background:rgba(237,237,233,0.42);
+}
+
+.happy ul li:nth-child(2) a::after {
+  width: 60%;
+}
+.happy ul li:nth-child(3) a::after {
+  width: 43%;
+}
+
+.happy ul li a:hover .img img{
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+
+/* section.smart */
+
+.smart {
+  width: 100%;
+  height: auto;
+  background-image: url(../img/section.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+}
+
+.smart .inner{
+  width: 1400px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+
+}
+
+.smart .inner h2 {
+  font-size: 40px;
+  margin-bottom: 60px;
+
+}
+
+.smart .inner h2 .colortext2 {
+  color: #425ca6;
+}
+
+.smart .inner ul {
+  width: 30%;
+  float: left;
+}
+
+.smart .inner ul li {
+  width: 100%;
+
+}
+
+.smart .inner ul li a{
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: left;
+}
+
+.smart .inner ul li a .img{
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.smart .inner ul li a .img img {
+  width: 100%;
+}
+
+.smart .inner ul li a h3 {
+  font-size: 22px;
+  line-height: 1.5;
+  position: absolute;
+  top: 55%;
+  color: white;
+  left: 40%;
+}
+
+.smart .inner ul li a::before {
+  content: '상품 테스트';
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 25px;
+  border-bottom: 5px solid #ffffff;
+}
+
+.smart .inner ul li:nth-child(2) a::before {
+  content: '피해 예방';
+}
+
+.smart .row {
+  float: right;
+  width: 70%;
+  height: 437px;
+}
+
+.smart .row .guide {
+  width: 50%;
+  float: left;
+  background: #fff;
+  text-align: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.smart .row .guide > p {
+  width: 30%;
+  font-size: 19px;
+  font-weight: bold;
+  margin: 20px auto;
+  padding: 10px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000;
+}
+
+.smart .row .guide p.img {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.smart .row .guide p.img img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.smart .row .guide a:hover p.img img {
+  transform: scale(1.3);
+  transition: all 1s;
+} 
+
+.smart .row .guide:first-child {
+  border-right: 1px solid #dddddd;
+}
+
+.smart .row .guide h3 {
+  margin-bottom: 31px;
+}
+
+
+/* section.news */
+
+.news {
+  width: 1400px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.news .issue {
+  margin-top: 50px;
+  width: 49.25%;
+  height: 280px;
+  float: left;
+  margin-right: 1.5%;
+  background-image: url(../img/img_08.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.news .issue:nth-child(2) {
+  margin-right: 0;
+  background-image: url(../img/img_09.jpg);
+}
+
+.news .issue h2 {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.news .issue p {
+  font-size: 15px;
+  color: #333;
+  margin-top: 20px;
+  margin-left: 10%;
+}
+
+.news .issue p .num {
+  font-size:14px;
+  margin-right: 10px;
+  padding: 3px 7px;
+  background-color: #7f8c97;
+  border-radius: 50%;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background: #454545;
+  color: #adadad;
+  overflow: hidden;
+
+}
+
+footer .address {
+  width: 1400px;
+  margin: 0 auto;
+  line-height: 1.7;
+
+}
+
+footer .address p {
+  float: left;
+  margin: 50px;
+  text-align: center;
+}
+
+footer .address .flogo {
+  float: right;
+  padding-top: 30px;
+}
+
+footer .address .copy {
+  font-size: 14px;
+}
+
+.top {
+  float: right;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 80px;
+  height: 80px;
+  background: #454545;
+  border-radius: 50%;
+  background-image: url(../img/arrow.JPG);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: top;
+  position: relative;
+}
+
+.top a {
+  display: block;
+  width: 100%;
+  height: 100%;  
+}
+
+.top p {
+  font-size:16px;
+  font-weight: bold;
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
