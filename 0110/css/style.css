@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-size: 2em;
+}
+h1, p {
+  margin: 0;
+}
+
+.container {
+/*  max-width: 1000px;*/
+/*  margin: 0 auto;*/
+/*  font-size: 0;*/
+  background: pink;
+/*  overflow: hidden; 가상 엘리멘트를 입력*/
+}
+
+/*
+.container:after{
+  content: '';
+  display:block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+*/
+
+.item {
+/*  float: left;*/
+/*  display: inline-block;*/
+  padding: 5%;
+/*  font-size: 1rem;*/
+/*  rem : root em: 16px*/
+/*  vertical-align: top;*/
+}
+
+.item-a {
+/*  width: 30%;*/
+  background-color: yellow;
+}
+
+.item-b {
+/*  width: 50%;*/
+  background-color: yellowgreen;
+}
+
+@media screen and (min-width:700px) {
+  .container {
+    font-size: 0;
+  }
+  .item {
+    display:inline-block;
+    font-size: 1rem;
+    vertical-align: top;
+  }
+  .item-a {
+    width: 30%;
+  }
+  .item-b {
+    width: 50%;
+  }
+  
+}
