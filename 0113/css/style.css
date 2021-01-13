@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body {
+}
+
+.box {
+  width:200px;
+  height: 100px;
+  border: 2px solid red;
+  text-align:center;
+  line-height: 90px;
+  margin:0 auto;
+  margin-top: 10rem;
+}
+
+/*
+.box:hover {
+  -webkit-transform:rotate(15deg);
+  -moz-transform:rotate(15deg);
+  -o-transform:rotate(15deg);
+  -ms-transform:rotate(15deg);
+  transform:rotate(15deg);
+}*/
+
+.box:hover {
+  transform: rotate(15deg);
+}
+
+.web-font {
+    font-family: 'Noto Sans JP', sans-serif;
+  
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 2em;
+}

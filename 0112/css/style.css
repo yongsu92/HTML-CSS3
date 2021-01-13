@@ -1,0 +1,26 @@
+
+.main {
+  height: 100vh;
+  background: lightgray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+/*  align-items: flex-start;*/
+  align-content: center;
+}
+
+.main h1 {
+  text-align: center;
+}
+
+.item {
+  background: red;
+}
+.item:nth-child(1){
+  width:200px;
+}
+.item:nth-child(2) {
+  flex:1;
+  background: blue;
+}
