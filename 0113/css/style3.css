@@ -1,0 +1,36 @@
+.grad {
+  height: 100vh;
+  background: #06f;
+  background: -wekit-linear-gradient(top,#06f, white 30%,#06f); 
+  background: -wekit-linear-gradient(bottom,#06f,white 30%,#06f); 
+  background: -o-linear-gradient(bottom,#06f,white 30%,#06f); 
+  background: linear-gradient(to bottom,#06f,white 30%,#06f);
+}
+
+.grad {
+  height: 100vh;
+  background: #06f;
+  background: -wekit-radial-gradient(white,yellow,red); 
+  background: -wekit-radial-gradient(white,yellow,red); 
+  background: -o-radial-gradient(white,yellow,red); 
+  background: radial-gradient(white,yellow,red);
+}
+
+
+.grad {
+  height: 100vh;
+  background: #06f;
+  background: -wekit-radial-gradient(circle,white,yellow,red); 
+  background: -wekit-radial-gradient(circle,white,yellow,red); 
+  background: -o-radial-gradient(circle,white,yellow,red); 
+  background: radial-gradient(circle,white,yellow,red);
+}
+
+.grad {
+  height: 100vh;
+  background: #06f;
+  background: -wekit-radial-gradient(circle,white,yellow,red); 
+  background: -wekit-radial-gradient(circle,white,yellow,red); 
+  background: -o-radial-gradient(10% 10%,circle,white,yellow,red); 
+  background: radial-gradient(circle at 10% 10%,white,yellow,red);
+}

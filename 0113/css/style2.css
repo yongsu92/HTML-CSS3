@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url(https://item.kakaocdn.net/do/df47eaad5ce25ea00f6bb20569fb0a98f43ad912ad8dd55b04db6a64cddaf76d);
+  background-repeat:no-repeat;
+  background-size: 50% 50%;
+  background-position: center bottom;
+  background-attachment: fixed;
+}
+
+.box {
+  width:100px;
+  height: 100px;
+  padding: 40px;
+  text-align: center;
+  line-height: 100px;
+  background-color: red;
+  background-clip:border-box;
+}
+
+.box2 {
+  width:100px;
+  height: 100px;
+  padding: 40px;
+  text-align: center;
+  line-height: 100px;
+  background-image: url(https://item.kakaocdn.net/do/df47eaad5ce25ea00f6bb20569fb0a98f43ad912ad8dd55b04db6a64cddaf76d);
+  background-clip:padding-box;
+  background-repeat: no-repeat;
+  background-size:50% 50%;
+  background-position:bottom;
+  background-origin:padding-box;
+}
+
+.box3 {
+  width:100px;
+  height: 100px;
+  padding: 10px;
+  text-align: center;
+  line-height: 100px;
+  background-color: yellow;
+  background-clip:content-box;
+}
