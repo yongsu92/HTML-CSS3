@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+span {
+  color: red;
+} 
+
+img {
+  width: 100px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li { display: inline-block; margin-left: 10px }
+
+div {
+  margin:0;
+  padding:0;
+}
+.box {
+  width:100px;
+  height: 100px;
+/*  background: green;*/
+/*  display: inline-block;*/
+/*  margin: 30px;*/
+  border: 3px solid red;  
+/*  border-radius: 30% 20% 30% 20%;*/
+/*  box-shadow: 2px 2px 6px 1px yellow;*/
+/*  text-align: center;*/
+/*  line-height: 100px;*/
+}
+
+.wrap{
+  position: relative;
+}
+.box1{
+  border: 2px solid blue;
+  width:100px;
+  height:100px;
+  z-index: 1;
+  position: absolute;
+  background-color: blue;
+}
+
+.box2{
+  border: 2px solid blue;
+  width:100px;
+  height:100px;
+  z-index: 2;
+  position: absolute;
+  left:10px;
+  background-color: red; 
+}
+
+.box3{
+  border: 2px solid blue;
+  width:100px;
+  height:100px;
+  z-index: 3;
+  position: absolute;
+  top:10px;
+  background-color: green;
+}
+
+.box4{
+  border: 2px solid blue;
+  width:500px;
+  height:100px;
+}
+
+.box5{  
+  border: 2px solid blue;
+  width:900px;
+  height:100px;
+}
+
+.navi a:link, .navi a:visited {
+  text-decoration: none;
+}
+
+.navi a:hover{
+  background-color: #222;
+  color:#fff;
+}
+
+.navi a:active {
+  background-color: #f00;
+}
+
+input:disabled {
+  background-color: #ddd;
+  border: 1px solid #ccc;
+}
+
+input:checked + span{
+  color:blue;
+}
+
+:root {
+  background-color: #000;
+}

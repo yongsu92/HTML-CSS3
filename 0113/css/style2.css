@@ -5,7 +5,7 @@ body {
   background-image: url(https://item.kakaocdn.net/do/df47eaad5ce25ea00f6bb20569fb0a98f43ad912ad8dd55b04db6a64cddaf76d);
   background-repeat:no-repeat;
   background-size: 50% 50%;
-  background-position: center bottom;
+  background-position: bottom right;
   background-attachment: fixed;
 }
 
@@ -42,3 +42,4 @@ body {
   background-color: yellow;
   background-clip:content-box;
 }
+

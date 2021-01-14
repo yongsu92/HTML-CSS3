@@ -22,8 +22,8 @@
   background: #06f;
   background: -wekit-radial-gradient(circle,white,yellow,red); 
   background: -wekit-radial-gradient(circle,white,yellow,red); 
-  background: -o-radial-gradient(circle,white,yellow,red); 
-  background: radial-gradient(circle,white,yellow,red);
+  background: -o-radial-gradient(10% 10%,circle,white,yellow,red); 
+  background: radial-gradient(circle at 10% 10%,white,yellow,red);
 }
 
 .grad {
@@ -31,6 +31,6 @@
   background: #06f;
   background: -wekit-radial-gradient(circle,white,yellow,red); 
   background: -wekit-radial-gradient(circle,white,yellow,red); 
-  background: -o-radial-gradient(10% 10%,circle,white,yellow,red); 
-  background: radial-gradient(circle at 10% 10%,white,yellow,red);
+  background: -o-radial-gradient(circle,white,yellow,red); 
+  background: repeating-radial-gradient(circle closest-side,white,white 10%,yellow 10%, yellow 20%,red 20%, red 30%);
 }
