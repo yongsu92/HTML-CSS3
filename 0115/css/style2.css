@@ -1,0 +1,19 @@
+.box {
+  text-align:center;
+  line-height: 100px;
+  background-color: blue;
+  width:100px;
+  height: 100px;
+  border: 3px solid black;
+  transition-property: background-color,transform,width,height;
+  transition-duration:2s,3s;
+}
+
+.box:hover{
+  width:200px;
+  height:120px;
+  line-height: 120px;
+  background-color: dodgerblue;
+  transform: translateX(1000px);
+/*  transform:rotate(180deg);*/
+}

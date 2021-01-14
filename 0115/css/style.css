@@ -1,0 +1,42 @@
+.origin {
+  width:300px;
+  border: 2px solid red;
+/*  perspective: 400px;*/
+}
+
+.movex {
+/*  transform: rotate3d(2.5,1.2,1.0,45deg);*/
+  transform: rotateX(30deg);
+}
+
+.movey{
+  transform:rotatez(34deg);
+  transform-origin:right bottom;
+}
+
+.movexy {
+  transform: translate(30%,30%);
+}
+
+.movexyz {
+  transform: translate3d(30px,50px,-60px);
+}
+
+
+.movex:hover {
+  transform: re(1.2);
+}
+
+.movey:hover{
+  transform:scaley(2);
+}
+
+.movexy:hover {
+  transform: scale(1.2,1.2);
+}
+
+.movexyz:hover {
+  transform: rotatey(180deg);
+}
+
+
