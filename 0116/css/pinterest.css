@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+/*  position: fixed;  */
+  padding: 1%;
+  background-color:black;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+}
+.masonry {
+	 columns: 5;
+	 column-gap: 16px;
+	 padding: 4.5rem;
+}
+ @media (max-width: 1200px) {
+	 .masonry {
+		 columns: 3;
+	}
+}
+ @media (max-width: 992px) {
+	 .masonry {
+		 columns: 2;
+	}
+}
+ @media (max-width: 760px) {
+	 .masonry {
+		 columns: 1;
+	}
+}
+ .masonry .grid {
+	 display: inline-block;
+	 margin-bottom: 16px;
+	 position: relative;
+}
+
+
+
+ .masonry .grid:before {
+	 border-radius: 5px;
+	 content: '';
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+	 background-color: rgba(0, 0, 0, .2);
+}
+
+.masonry .grid:hover {
+  transform: scale(1.02);
+  
+  /* 마우스 호버시 이미지 밝아질 수 있도록 해보기*/
+  /* 조금 더 부드러운 애니메이션 */
+}
+
+ .masonry .grid img {
+	 width: 100%;
+	 border-radius: 5px;
+}
+
+ .masonry .grid__link {
+	 position: absolute;
+	 left: 0;
+	 right: 0;
+	 top: 0;
+	 bottom: 0;
+}
+ .masonry .grid__body {
+	 position: absolute;
+	 left: 0;
+	 right: 0;
+	 top: 0;
+	 bottom: 0;
+	 padding: 30px 30px;
+	 color: #fff;
+	 display: flex;
+	 flex-direction: column;
+}
+ 

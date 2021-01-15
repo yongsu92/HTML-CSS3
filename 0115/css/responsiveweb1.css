@@ -1,0 +1,22 @@
+#wrap{
+  background: #e65d5d;
+/*  width:960px;*/
+  width:90%;
+  height: 500px;
+  margin: 0 auto;
+  border: 4px solid #000;
+}
+
+@media all and (min-width:320px){
+  #wrap {
+    background: #e65d5d;
+  }
+}@media all and (min-width:560px){
+  #wrap {
+    background: #2dcc70;
+  }
+}@media all and (min-width:980px){
+  #wrap {
+    background: dodgerblue;
+  }
+}

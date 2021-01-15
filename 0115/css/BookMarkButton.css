@@ -1,0 +1,54 @@
+* {
+  margin:0;
+  padding: 0;
+}
+
+.bookmark {
+  width:100px;
+  height:100px;
+  border: 3px solid gray;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 50%;
+  text-align: center;
+  line-height: 100px;
+  font-size: 30px;
+  color:white;
+  background: gray;
+  position: relative;
+/*  transition: background color 12s 1s;*/
+}
+.inner {
+  position: absolute;
+  margin: 0 auto;
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+  background-color: red;
+  transition: all 0.3s;
+}
+
+
+.inner:hover{
+  transform: scale(1);
+}
+/*  animation-name: scaleup;*/
+/*  animation-duration: 1s;*/
+/*  animation-timing-function: linear;*/
+/*  animation-fill-mode: forwards;*/
+}
+/*
+
+@keyframes scaleup {
+  from {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+*/
+
