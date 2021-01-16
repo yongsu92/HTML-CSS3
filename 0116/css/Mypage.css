@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  z-index: -99999;
+}
+
+header {
+  width: auto;
+  height: 33vh;
+  background-image: url("/image/row2.jfif");
+  /*  background-color: darkred;*/
+  /*  position: relative;*/
+  /*  background-image: url('/image/toystory.jpg');*/
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 1)), color-stop(0.35, rgba(0, 0, 0, 1)), color-stop(0.5, rgba(0, 0, 0, 1)), color-stop(0.65, rgba(0, 0, 0, 1)), color-stop(0.83, rgba(0, 0, 0, 0.9)), color-stop(1, rgba(0, 0, 0, 0.09)));
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover;
+}
+
+.main-header {
+  position: relative;
+}
+
+.user-name-batch {
+  display: flex;
+}
+
+.username {
+  position: absolute;
+  bottom: 10%;
+  left: 26%;
+  color: white;
+}
+
+.batch {
+  margin-left: 10px;
+}
+
+.batch span {
+  background-color: orange;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 3px 7px;
+  border: 1px solid orange;
+  border-radius: 4px;
+
+}
+
+
+section {
+  width: auto;
+  height: 70vh;
+  background-color: rgb(252,230,255,0.3);
+  /*  position: relative;*/
+}
+
+/*
+aside {
+  float: left;
+  width: 20%;
+  height: 100%;
+  background-color: lightgray;
+}
+*/
+
+article {
+  width: auto;
+  height: 100%;
+  position: relative;
+}
+
+.article {
+  /*  display: block;*/
+  /*  float: right;*/
+  position: absolute;
+  width: auto%;
+  height: 100%;
+  /*  background-color:antiquewhite;*/
+  left: 25%;
+  right: 8%;
+  padding: 30px 20px;
+
+}
+
+footer {
+  /*  clear: both;*/
+  height: 10vh;
+  background-color: aqua;
+}
+
+
+
+
+
+/* user profile card*/
+p {
+  margin: 0;
+}
+
+.user-card-container {
+  position: absolute;
+  z-index: 9999;
+  top: 10%;
+  left: 5%;
+}
+
+/*
+.user-card-container:hover {
+  transform: rotateY(180deg);
+}
+*/
+
+.user-card-cellphone-container {
+  width: 17vw;
+  height: 80vh;
+  background-color: #1e1b26;
+  box-shadow: 5px 5px 30px -3px black;
+  border-radius: 20px;
+}
+
+.user-card-movie-img {
+  width: 100%;
+  height: 60%;
+  background-image: url("/image/rabbit.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*	 z-index: 111 !important;*/
+  border-radius: 20px;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 1)), color-stop(0.35, rgba(0, 0, 0, 1)), color-stop(0.5, rgba(0, 0, 0, 1)), color-stop(0.65, rgba(0, 0, 0, 1)), color-stop(0.85, rgba(0, 0, 0, 0.9)), color-stop(1, rgba(0, 0, 0, 0)));
+  /*	 position: relative;*/
+}
+
+.user-card-movie {
+  position: absolute;
+  width: 17vw;
+  height: 80vh;
+  display: block;
+  border-radius: 4px;
+}
+
+
+.user-card-menu {
+  padding: 5px 22px;
+  color: white;
+}
+
+.about-section-header {
+  font-size: 1rem;
+}
+
+
+.about-section-para {
+  line-height: 1.7;
+  font-size: 0.7rem;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+
+.about {
+  margin-top: 20px;
+  position: relative;
+}
+
+.about-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 1;
+}
+
+.footer-list {
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+.footer-list li {
+  font-size: 0.8rem;
+  color: cornsilk;
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.follow-btn,
+.DM-btn {
+  background-color: azure;
+  color: dimgray;
+  font-weight: bold;
+  display: inline-block;
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.about-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* user profile card*/
+
+/* content nav bar*/
+
+.content-nav {
+  margin-bottom: 50px;
+}
+
+.content-nav nav {
+
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  left: 5px;
+}
+
+.content-nav nav a {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #16151b;
+  margin: 0 15px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+
+.content-nav nav a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #16151b;
+  top: 47%;
+  animation: out 0.2s ease-in-out 1 both;
+
+}
+
+.content-nav nav a:hover:before {
+  animation: in 0.2s ease-in-out 1 both;
+}
+
+@keyframes in {
+  0% {
+    width: 0;
+    left: 0;
+    right: auto;
+  }
+
+  100% {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+@keyframes out {
+  0% {
+    width: 100%;
+    left: auto;
+    right: 0;
+  }
+
+  100% {
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content-nav nav a:nth-child(1) {
+  animation: show 0.2s 1.1s ease 1 both;
+}
+
+.content-nav nav a:nth-child(2) {
+  animation: show 0.2s 1.2s ease 1 both;
+}
+
+.content-nav nav a:nth-child(3) {
+  animation: show 0.2s 1.3s ease 1 both;
+}
+
+.content-nav nav a:nth-child(4) {
+  animation: show 0.2s 1.4s ease 1 both;
+}
+
+.content-nav nav a:nth-child(5) {
+  animation: show 0.2s 1.5s ease 1 both;
+}
+
+
+/* hambuger button*/
+.hambuger {
+  position: absolute;
+  right: 10px;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #fff;
+  stroke-width: 3;
+  stroke-linecap:round;
+}
+
+.ham3 .top {
+  stroke-dasharray: 40 130;
+}
+
+.ham3 .middle {
+  stroke-dasharray: 40 140;
+}
+
+.ham3 .bottom {
+  stroke-dasharray: 40 205;
+}
+
+.ham3.active .top {
+  stroke-dasharray: 75 130;
+  stroke-dashoffset: -63px;
+}
+
+.ham3.active .middle {
+  stroke-dashoffset: -102px;
+}
+
+.ham3.active .bottom {
+  stroke-dasharray: 110 205;
+  stroke-dashoffset: -86px;
+}
+
+/* hambuger button*/

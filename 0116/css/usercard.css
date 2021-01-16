@@ -1,0 +1,112 @@
+/*
+ body {
+	 background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95)), url("https://i.ibb.co/FDGqCmM/papers-co-ag74-interstellar-wide-space-film-movie-art-33-iphone6-wallpaper.jpg");
+	 background-position: center;
+	 background-size: cover;
+	 background-repeat: repeat;
+}
+*/
+
+
+/* user profile card*/
+p {
+  margin: 0;
+}
+
+.user-card-container {
+}
+
+
+.user-card-cellphone-container {
+  width: 315px;
+  height: 750px;
+  background-color: #1e1b26;
+  box-shadow: 5px 5px 115px -14px black;
+  border-radius: 20px;
+}
+
+.user-card-movie-img {
+  width: 100%;
+  height: 60%;
+  background-image: url("/image/coco.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*	 z-index: 111 !important;*/
+  border-radius: 20px;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 1)), color-stop(0.35, rgba(0, 0, 0, 1)), color-stop(0.5, rgba(0, 0, 0, 1)), color-stop(0.65, rgba(0, 0, 0, 1)), color-stop(0.85, rgba(0, 0, 0, 0.9)), color-stop(1, rgba(0, 0, 0, 0)));
+  /*	 position: relative;*/
+}
+
+.user-card-movie {
+  position: absolute;
+  width: 315px;
+  height: 650px;
+  display: block;
+  border-radius: 4px;
+}
+
+
+.user-card-menu {
+  padding: 5px 22px;
+  color: white;
+}
+
+.about-section-header {
+  font-size: 1rem;
+}
+
+
+.about-section-para {
+  line-height: 1.7;
+  font-size: 0.7rem;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+
+.about {
+  position: relative;
+}
+
+.about-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 1;
+}
+
+.footer-list {
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+.footer-list li {
+  font-size: 0.8rem;
+  color: cornsilk;
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.follow-btn,
+.DM-btn {
+  background-color: azure;
+  color: dimgray;
+  font-weight: bold;
+  display: inline-block;
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.about-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* user profile card*/
+
