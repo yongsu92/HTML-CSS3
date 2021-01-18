@@ -1,0 +1,52 @@
+html { height: 100%; font-size: 3rem;}
+
+
+@keyframes rotate-carousel{
+  to {
+    transform:rotateY(360deg);
+  }
+
+}
+.test {
+  transform-style: preserve-3d;
+  transform: rotateX(-15deg);
+}
+.stage {
+  width:100vw;
+  height:100vh;
+  background: powderblue;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  position: relative;
+  width:200px;
+  height:200px;
+  transform-style:preserve-3d;
+  animation: rotate-carousel 20s infinite linear;
+}
+
+.panel {
+  width:200px;
+  height:200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,0.5);
+  position: absolute;
+  left: 0;
+  top:0;
+  border: 1px solid black;
+/*  backface-visibility: hidden;*/
+}
+
+
+.panel:nth-child(1) { transform: rotateY(0deg)   translateZ(273px);}
+.panel:nth-child(2) { transform: rotateY(60deg)  translateZ(273px);}
+.panel:nth-child(3) { transform: rotateY(120deg) translateZ(273px);}
+.panel:nth-child(4) { transform: rotateY(180deg) translateZ(273px);}
+.panel:nth-child(5) { transform: rotateY(240deg) translateZ(273px);}
+.panel:nth-child(6) { transform: rotateY(300deg) translateZ(273px);}
