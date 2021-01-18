@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100px;
+  height: 150px;
+  /* font-size에 비례해서 크기를 변경 시키겠다는 의미이다. */
+  border-radius: 0.5em;
+  font-size: 1.5rem;
+  background: red;
+  margin:1em;
+/*   브라우저에게 미리 변화가 있을것 이라는 것을 알려주는 것이 좋다*/
+/*  변화가 없는 상태를 미리 알려준다.*/
+  transform: rotateY(0deg);
+  transition: 1s;
+
+}
+
+.world {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:80vw;
+  height:80vh;
+  background: #ffff00;
+/*  얼마나 내 눈에서 멀리 있는 시점으로 볼 것인가?*/
+  perspective: 500px;
+}
+
+.world:hover .card{
+  transform: rotateY(180deg);
+}

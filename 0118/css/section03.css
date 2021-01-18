@@ -1,0 +1,50 @@
+@keyframes sample-ani {
+  0% {
+    transform:translate(0,0);
+    background: #ffff00;
+  }
+  50% {
+    transform:translate(200px,0);
+        background: #00ffff;
+
+  }
+  100% {
+    transform:translate(400px,200px);
+        background: #ffff00;
+
+  }
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100px;
+  height:100px;
+  background:#fff000;
+  border: 2px solid black;
+  animation: sample-ani 3s  linear forwards;
+}
+
+.box:hover {
+  animation-play-state: paused;
+}
+
+body {
+  background: #222;
+}
+@keyframes shapeship-ani {
+  to {
+    background-position:-2550px 0;
+  }
+}
+.spaceship {
+  width:150px;
+  height:150px;
+  background:url('/images/sprite_spaceship.png') no-repeat 0 0 / auto 150px;
+  animation: shapeship-ani 1.5s infinite steps(17) ;
+}
+
+
+
+
