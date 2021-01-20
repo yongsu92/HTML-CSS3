@@ -1,0 +1,50 @@
+.scene {
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:200;
+/*
+  display:flex;
+  align-items:center;
+  justify-content: center;
+*/
+}
+/* 같은 속성아래 클래서 선택자는 붙여서 적어야 한다.*/
+.scene.one {
+  background-image: url(../parallax/img/heic0910e.jpg);
+}
+.scene.two {
+  background-image: url(../parallax/img/heic1501a.jpg);
+}
+.scene.three {
+  background-image: url(../parallax/img/heic1608a.jpg);
+}
+.scene header {
+  max-width: 60%;
+  position: relative;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+  color:#fff;
+}
+
+.scene header h1 {
+  font-size: 2rem;
+  margin-bottom:1rem;  
+  font-weight:300;
+}
+
+
+.scene header h1:after {
+  content: '';
+  border-bottom: 1px solid #fff;
+  display: block;
+  width:8rem;
+  margin:1.2rem auto;
+}

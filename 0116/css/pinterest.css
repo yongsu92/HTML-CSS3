@@ -33,10 +33,14 @@ body {
 		 columns: 1;
 	}
 }
- .masonry .grid {
+
+
+
+.masonry .grid {
 	 display: inline-block;
 	 margin-bottom: 16px;
 	 position: relative;
+     animation: ani 1s;
 }
 
 
@@ -52,12 +56,11 @@ body {
 	 background-color: rgba(0, 0, 0, .2);
 }
 
+/*
 .masonry .grid:hover {
   transform: scale(1.02);
-  
-  /* 마우스 호버시 이미지 밝아질 수 있도록 해보기*/
-  /* 조금 더 부드러운 애니메이션 */
 }
+*/
 
  .masonry .grid img {
 	 width: 100%;
