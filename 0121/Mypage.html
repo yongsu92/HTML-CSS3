@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/Mypage.css">
+</head>
+
+<body>
+  <header>
+    <div class="profile">
+     <span class="avatar">
+       <img src="/templated-visualize/images/avatar2.jpg" alt="avatar img">
+     </span>
+     <div class="about-artist">
+     <h1>Lorem ipsum dolor sit amet.</h1>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolore earum delectus voluptatibus ullam explicabo, et fuga ducimus blanditiis labore.</p>
+     </div>
+    </div>
+      <div class="btns">
+        <button class="btn js-btn">Section 1</button>
+        <button class="btn js-btn">Section 2</button>
+        <button class="btn js-btn">Section 3</button>
+        <button class="btn js-btn">Section 4</button>
+      </div>
+      <div class="goToTop">
+        <button class="btn js-btn">Top</button>
+      </div>
+  </header>
+
+  <div class="section js-section">scroll-behavior: smooth - Section 1</div>
+  <div class="section js-section">scroll-behavior: smooth - Section 2</div>
+  <div class="section js-section">scroll-behavior: smooth - Section 3
+  </div>
+  <div class="section js-section">scroll-behavior: smooth - Section 4</div>
+  <script>
+    function scrollIt(element) {
+      window.scrollTo({
+        'behavior': 'smooth',
+        'left': 0,
+        'top': element.offsetTop
+      });
+    }
+
+    if (scroll()) {
+      console.log('move');
+    }
+
+    const btns = document.querySelectorAll('.js-btn');
+    const sections = document.querySelectorAll('.js-section');
+
+    btns[0].addEventListener('click', () => {
+      scrollIt(sections[0]);
+    });
+
+    btns[1].addEventListener('click', () => {
+      scrollIt(sections[1]);
+    });
+
+    btns[2].addEventListener('click', () => {
+      scrollIt(sections[2]);
+    });
+
+    btns[3].addEventListener('click', () => {
+      scrollIt(sections[3]);
+    });
+
+    var lastScrollTop = 0;
+    var delta = 5;
+    var fixBox = document.querySelector('.btns');
+    var fixBoxTop = document.querySelector('.goToTop');
+    var fixBoxHeight = fixBox.offsetHeight;
+    console.log(fixBoxHeight);
+
+
+    // scroll event
+    window.onscroll = function(e) {
+      didScroll = true;
+    }
+
+    // 0.25초 마다 스크롤 여부를 체크하여 스크롤 둥이면 hasScrolled호출
+    setInterval(function() {
+      if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+      }
+    }, 250);
+
+    fixBoxTop.addEventListener('click',function(){
+      window.scroll({top:0,left:0,behavior:'smooth'});
+      
+    })
+    
+    function hasScrolled() {
+      var nowScrollTop = window.scrollY;
+      if (Math.abs(lastScrollTop - nowScrollTop) <= delta) {
+        return;
+      }
+      if (nowScrollTop >= document.querySelector('header').offsetHeight) {
+        console.log('돌파');
+        fixBox.classList.add('show');
+        fixBoxTop.classList.add('show');
+        
+      } else {
+        fixBox.classList.remove('show');
+        fixBoxTop.classList.remove('show');
+      }
+      lastScrollTop = nowScrollTop;
+    }
+  </script>
+</body></html>
