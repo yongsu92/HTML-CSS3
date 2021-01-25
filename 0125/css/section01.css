@@ -1,0 +1,15 @@
+.container {
+  display:flex;
+/*  flex-direction:column;*/
+/*  main axis */
+/*  justify-content:flex-start;*/
+  align-items: stretch;
+  height:80vh;
+  background:gray;
+}
+
+.item {
+  padding:2em;
+  border: 3px solid black;
+  background:white;
+}
