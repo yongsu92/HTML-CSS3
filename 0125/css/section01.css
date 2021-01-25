@@ -2,14 +2,31 @@
   display:flex;
 /*  flex-direction:column;*/
 /*  main axis */
-/*  justify-content:flex-start;*/
-  align-items: stretch;
+/*  justify-content:center;*/
+/*  align-items: center;*/
   height:80vh;
   background:gray;
 }
 
 .item {
+/*
+  flex-grow:1;
+  flex-basis:0;
+*/
+  flex:1;
   padding:2em;
   border: 3px solid black;
   background:white;
+}
+
+.item:nth-child(1) {
+  flex-grow: ;
+}.item:nth-child(2) {
+  flex-grow: ;
+}.item:nth-child(3) {
+  flex-grow: ;
+}.item:nth-child(4) {
+  flex-grow: ;
+}.item:nth-child(5) {
+  flex-grow: ;
 }
