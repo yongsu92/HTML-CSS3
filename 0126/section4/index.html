@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactive Web</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .characters {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background: #fff000;
+        }
+        .ilbuni {
+            width: 100px;
+            cursor: pointer;
+        }
+        .characters .ilbuni {
+            display: inline-block;
+        }
+        .special {
+            border: 10px dashed red;
+        }
+    </style>
+</head>
+<body>
+    <div class="characters">
+        <div class="ilbuni a">
+            <img src="images/ilbuni_0.png" alt="일분이">
+        </div>
+        <div class="ilbuni b">
+            <img src="images/ilbuni_1.png" alt="일분이">
+        </div>
+        <div class="ilbuni c">
+            <img src="images/ilbuni_2.png" alt="일분이">
+        </div>
+    </div>
+    <div class="ilbuni d">
+        <img src="images/ilbuni_3.png" alt="일분이">
+    </div>
+
+    <script>
+//      const ilbuni = document.querySelector(".ilbuni");
+//      ilbuni.classList.add('special');
+//      const ilbuni3 = document.querySelector('.ilbuni.b');
+//      ilbuni3.classList.remove('ilbuni')
+//      const ilbuni2 = document.querySelector('.characters .ilbuni:nth-child(2)');
+//      console.log(ilbuni2);
+//      const char = document.querySelector('.characters');
+//      char.setAttribute('data-id',1234);
+//      console.log(char.getAttribute('data-id'));
+//      const pElem = document.createElement('p');
+//      pElem.innerHTML = '<div>안녕 조립할거야 이제</div>'
+//      console.log(pElem);
+//      const charactersElem = document.querySelector('.characters');
+//      charactersElem.appendChild(pElem);
+//      charactersElem.removeChild(document.querySelector('.b'));
+      const ilbuni = document.querySelector(".ilbuni:nth-child(3)");
+      ilbuni.addEventListener('click',function () {
+        ilbuni.classList.toggle('special');
+      },);
+    </script>
+</body>
+</html>
