@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/section03.css">
+</head>
+
+<body>
+  <div class="menu">
+    <button class="menu-btn" data-value="1">
+      <img class="icon" src="/images/ilbuni_0.png" alt="">
+      <span class="btn-label">일분이 1</span>
+    </button>
+    <button class="menu-btn" data-value="2">
+      <img class="icon" src="/images/ilbuni_1.png" alt="">
+      <span class="btn-label">일분이 2</span>
+
+    </button>
+    <button class="menu-btn" data-value="3">
+      <img class="icon" src="/images/ilbuni_2.png" alt="">
+      <span class="btn-label">일분이 3</span>
+
+    </button>
+  </div>
+  <script>
+    (function() {
+      const menu = document.querySelector('.menu');
+        
+      function clickMenuHandler(e) {
+        let elem = event.target;
+        while(!elem.classList.contains('menu-btn')){
+          elem = elem.parentNode;
+          // btn 상위 레벨로 올라 가지 못하도록 제한을 건다.
+          if(elem.nodeName==='BODY'){
+            elem = null;
+            return;
+          }
+        }
+        console.log(elem.dataset.value)
+
+      }
+      menu.addEventListener('click',clickMenuHandler);
+    })();
+  </script>
+</body></html>
