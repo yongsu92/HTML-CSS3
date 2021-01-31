@@ -1,0 +1,83 @@
+.stage {
+  width:100vw;
+  height:100vh;
+  background:#333;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+/*  perspective:800px;*/
+}
+
+.door {
+  position: relative;
+  width:100px;
+  height:150px;
+}
+
+.door-back{
+  overflow: hidden;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: black;
+}
+
+.ilbuni {
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:100px;
+  height:100px;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: contain;
+  transition:0.5s 0.5s;
+/*  transition-delay:0.3s;*/
+  transform:translate3D(100%,0,0);
+}
+
+
+.door:nth-child(1) .ilbuni{
+  background-image:url(../images/ilbuni_0.png);
+/*  background 로 넣으면 door에 css가 적용되게 된다.*/
+}
+.door:nth-child(2) .ilbuni{
+  background-image:url(../images/ilbuni_1.png);
+}
+.door:nth-child(3) .ilbuni{
+  background-image:url(../images/ilbuni_2.png);
+}
+
+
+
+.door-body {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  transition: 0.3s;
+  transform-origin:0%;
+  cursor: pointer;
+}
+
+.door:nth-child(1) .door-body {
+  background:rgba(233,0,0,.6);
+}
+.door:nth-child(2) .door-body {
+  background:rgba(0,233,0,.6);
+}
+.door:nth-child(3) .door-body {
+  background:rgba(0,0,233,.6);
+}
+
+
+.door-opened .door-body {
+  transform:perspective(800px) rotateY(-110deg);
+}
+
+.door-opened .ilbuni {
+    transform:translate3D(0,0,0);
+}
