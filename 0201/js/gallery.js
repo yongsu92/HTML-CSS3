@@ -16,12 +16,13 @@
       move(Math.floor(items.length / 2));
       bindEvents();
     
-      timer();
+//      timer();
   }
   
   function resize() {
-      width = Math.max(window.innerWidth * .25, 275),
-      height = window.innerHeight * .5,
+//      width = Math.max(window.innerWidth * .25, 275),
+      width = window.innerHeight * .4,
+      height = window.innerHeight * .4,
       totalWidth = width * items.length;
     
       slider.style.width = totalWidth + "px";
@@ -41,13 +42,17 @@
     
       for(var i = 0; i < items.length; i++) {
           let item = items[i],
-              box = item.getElementsByClassName('item__3d-frame')[0];
+              box = item.getElementsByClassName('item__3d-frame')[0],
+              title = item.getElementsByClassName('item__title')[0];
           if(i == (index - 1)) {
               item.classList.add('carousel__slider__item--active');
-              box.style.transform = "perspective(1200px)"; 
+              box.style.transform = "perspective(1200px)";
+              title.style.transform = "perspective(1200px)";
           } else {
             item.classList.remove('carousel__slider__item--active');
               box.style.transform = "perspective(1200px) rotateY(" + (i < (index - 1) ? 40 : -40) + "deg)";
+              title.style.transform = "perspective(1200px) rotateY(" + (i < (index - 1) ? 40 : -40) + "deg)";
+              
           }
       }
     
@@ -63,12 +68,12 @@
   
   function prev() {
     move(--currIndex);
-    timer();
+//    timer();
   }
   
   function next() {
     move(++currIndex);    
-    timer();
+//    timer();
   }
   
   
