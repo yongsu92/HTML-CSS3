@@ -3,10 +3,10 @@
 
   var carousel = document.getElementsByClassName('main__carousel')[0],
       slider = carousel.getElementsByClassName('carousel__slider')[0],
-      items = carousel.getElementsByClassName('carousel__slider__item'),
+      items = document.querySelectorAll('carousel__slider__item'),
       prevBtn = carousel.getElementsByClassName('carousel__prev')[0],
       nextBtn = carousel.getElementsByClassName('carousel__next')[0];
-  
+    console.log(items);
   var width, height, totalWidth, margin = 20,
       currIndex = 0,
       interval, intervalTime = 4000;
