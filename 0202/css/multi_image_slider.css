@@ -1,0 +1,45 @@
+
+
+.wrapper {
+  display: inline-flex;
+  width: 100%;
+}
+
+.row {
+	display: inline-flex;
+  width: 100%;
+}
+
+.column {
+  display: inline-flex; 
+  padding: 5px;
+  width: 33.3%;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 8px 18px 0 rgba(0, 0, 0, 0.39);
+  height: auto;
+}
+
+.btn1 {
+	border: 2px solid cyan;
+	padding: 5px;
+	cursor: pointer;
+	border-radius: 30px;
+	color: cyan;
+	font-weight: 900;
+}
+
+
+.btn1:hover {
+	color: white;
+	background-color: cyan;
+	transition: 0.2s ease-in-out;
+}
+
+.navigate {
+	text-align: center;
+	padding: 15px;
+}

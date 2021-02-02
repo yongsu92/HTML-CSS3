@@ -1,111 +1,10 @@
 
-/*lamp*/
-
-#lamp {
-  position:relative;
-  width:100vw;
-}
-
-#lamp input[name="switch"] {
-  border: 2px solid white;
-}
-#lamp input[name="switch"],#lamp input[name="switch"] + label {
-  position:absolute;
-  color:white;
-  width:2rem;
-  height:2rem;
-}
-#lamp input[name="switch"] + label {right:10rem; top:2rem;}
-#lamp input[name="switch"] {
-  opacity:0;
-  z-index:9;
-  cursor:pointer;
-}
-#lamp input[value="on"] {
-  right:3rem;
-}
-#lamp input[value="off"] {
-  right:1rem;
-}
-#lamp input[name="switch"] + label {
-  text-align:center;
-}
-
-#lamp input[value="on"]:checked {
-  right:14rem;
-}
-#lamp input[value="on"]:checked + input[value="off"] {
-  right:3rem;
-}
-
-
-.lamp {
-  position:relative;
-/*  margin:0 auto;*/
-  left:50%;
-  width:.7rem;
-  height:5rem;
-  background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                   linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                   linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
-  background-repeat:no-repeat;
-  background-size:.15rem 3rem, .4rem .8rem, .7rem 2rem;
-  background-position:50% 0, .19rem 3rem, 0 3.8rem;
-}
-
-
-
-.lamp:before, .lamp:after {
-  content:'';
-  position:absolute;
-}
-.lamp:before {
-  left:-1.65rem;
-  bottom:-4rem;
-  width:4rem;
-  height:4rem;
-  border-radius:50%;
-  background:rgba(255,255,255,0.03);
-  box-shadow:inset 2px -2px 10px rgba(255,255,255,0.07);
-  transition:all .15s;
-}
-.gonna-give-light, 
-.gonna-give-light:before{
-  position:absolute;
-}
-.gonna-give-light {
-  top:5.05rem;
-  left:.22em;
-  width:0;
-  height:1rem;
-  border-right:.17rem solid rgba(255,255,255,0.05);
-}
-.gonna-give-light:before {
-  content:'';
-  top:1rem;
-  left:-.6rem;
-  width:.9rem;
-  height:.9rem;
-  border-radius:50%;
-  border:.27rem solid rgba(255,255,255,0.05);
-  box-shadow:0px 0px 50px rgba(255,255,255,0);
-}
-input[value="on"]:checked ~ .lamp:before {
-  background:rgba(255,255,255,1);
-  box-shadow:0px 2px 10px rgba(255,255,255,0.8),
-             0px 5px 50px rgba(255,255,255,0.8),
-             0px 8px 80px rgba(255,255,255,0.6),
-             0px 8px 120px rgba(255,255,255,0.6);
-}
-
-
 .gallery__render {
   padding: 0;
   margin: 0;
   width: 100vw;
   height: 100vh;
 /*  background-image: url('../images/background.jpg');*/
-  background:#0c2329;
   background-size: contain;
   position: relative;
   left:0;
@@ -114,25 +13,26 @@ input[value="on"]:checked ~ .lamp:before {
 }
 
 .main__carousel {
-  top:25%;
+  top:10%;
+  background:#0c2329;
   position: relative;
   display: block;
+  padding: 2% .6%;
 /*  width: 100%;*/
-  height:50%;
+  height:45%;
   box-sizing: border-box;
 }
 
 .carousel__prev,
 .carousel__next {
   position: absolute;
-  bottom: -15%;
-  
+  bottom: 1%;
   transition: transform 0.25s ease;
 }
 
 .carousel__prev i,
 .carousel__next i {
-  font-size:2.5rem;
+  font-size:2rem;
   color: rgba(255,255,255,0.73);
   cursor: pointer;
 }
@@ -150,25 +50,6 @@ input[value="on"]:checked ~ .lamp:before {
 .carousel__next {
   right: 40%;
 }
-
-@media (max-width:1400px){
-  .lamp {
-    left:51%;
-  }
-/*
-  .carousel__prev {
-  left: 30%;
-  
-}
-
-  .carousel__next {
-    right: 20%;
-  }
-*/
-
-}
-
-
 
 .carousel__body {
   width: 100%;
