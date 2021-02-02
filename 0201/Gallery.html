@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Gallery</title>
   <link rel="stylesheet" href="css/reset.css">
@@ -8,8 +10,21 @@
   <link rel="stylesheet" href="css/fontello/css/fontello.css">
 </head>
 
-<body class="gallery-render">
-  <div class="carousel">
+<body class="gallery__render">
+   <div id="lamp">
+    <input type="radio" name="switch" value="on" checked="checked" />
+    <input type="radio" name="switch" value="off"  />
+    <div class="lamp">
+      <div class="gonna-give-light"></div>
+    </div>
+  </div>
+  <div class="close__btn">
+    <i class="icon-back"></i>
+  </div>
+    <div class="qurating">
+    <i class="icon-mic-1"></i>
+  </div>
+  <div class="main__carousel">
     <div class="carousel__body">
       <div class="carousel__prev"><i class="icon-left-open"></i></div>
       <div class="carousel__next"><i class="icon-right-open"></i></div>
@@ -17,7 +32,7 @@
         <div class="carousel__slider__item">
           <div class="item__3d-frame">
             <div class="item__3d-frame__box item__3d-frame__box--front">
-              <img src="/images/einstain.jfif" alt="">
+              <img class="gallery__image" data-index="1" src="/images/einstain.jfif" alt="">
             </div>
             <div class="item__3d-frame__box item__3d-frame__box--left"></div>
             <div class="item__3d-frame__box item__3d-frame__box--right"> </div>
@@ -29,7 +44,7 @@
         <div class="carousel__slider__item">
           <div class="item__3d-frame">
             <div class="item__3d-frame__box item__3d-frame__box--front">
-              <img src="/images/jo.jfif" alt="">
+              <img class="gallery__image" data-index="2" src="/images/jo.jfif" alt="">
             </div>
             <div class="item__3d-frame__box item__3d-frame__box--left"></div>
             <div class="item__3d-frame__box item__3d-frame__box--right"> </div>
@@ -41,7 +56,7 @@
         <div class="carousel__slider__item">
           <div class="item__3d-frame">
             <div class="item__3d-frame__box item__3d-frame__box--front">
-              <img src="/images/mari.jfif" alt="">
+              <img class="gallery__image" data-index="3" src="/images/mari.jfif" alt="">
 
             </div>
             <div class="item__3d-frame__box item__3d-frame__box--left"></div>
@@ -132,5 +147,6 @@
       </div>
     </div>
   </div>
+
   <script src="js/gallery.js"></script>
 </body></html>

@@ -1,7 +1,7 @@
 (function() {
   "use strict";
 
-  var carousel = document.getElementsByClassName('carousel')[0],
+  var carousel = document.getElementsByClassName('main__carousel')[0],
       slider = carousel.getElementsByClassName('carousel__slider')[0],
       items = carousel.getElementsByClassName('carousel__slider__item'),
       prevBtn = carousel.getElementsByClassName('carousel__prev')[0],
@@ -84,7 +84,19 @@
   }
 
 
-
+  function sliderEventHandler (e){
+    let targetElem = e.target;
+    if(targetElem.classList.contains('gallery__image')){
+      alert(targetElem.dataset.index);
+      let targetParentNode = targetElem.parentNode;
+      while(!targetParentNode.classList.contains("carousel__slider__item")){
+            targetParentNode = targetParentNode.parentNode;
+      }
+      targetParentNode.classList.add("image__scale__up");
+    }
+  }
+  
+  slider.addEventListener('click',sliderEventHandler);
 
   
   init();
