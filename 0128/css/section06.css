@@ -2,6 +2,8 @@ html { height: 100%; font-size: 3rem;}
 
 body {
   margin: 0;
+  transform: rotate(30deg);
+  overflow: hidden;
 }
 @keyframes rotate-carousel{
   to {

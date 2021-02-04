@@ -1,0 +1,355 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.My_profile_container {
+/*  width: 100vw;*/
+  height: 400vh;
+  overflow: hidden;
+}
+
+.profile_wrapper,.second__section,.third__section,.forth__section{
+  width: 100%;
+  height: 100vh;
+}
+
+.profile_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_border {
+  height: 539px;
+  width: 400px;
+  background: transparent;
+  border-radius: 20px;
+  transition: border 1s;
+  position: relative;
+}
+.profile_border:hover {
+  border: 2px solid #fff;
+}
+.profile_card {
+  height: 559px;
+  width: 420px;
+  background: #808080;
+  border-radius: 20px;
+  transition: all 0.9s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 100px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  perspective: 800px;
+}
+
+.profile_card1 {
+  background: url("../images/Sydney.jfif") center center no-repeat;
+  background-size: cover;
+/*  background-size: 300px;*/
+}
+
+
+
+.profile_about {
+  opacity: 1;
+  margin-left :4rem;
+  width:40%;
+  height:15rem;
+  transition: 2s; 
+  position: relative;
+}
+
+.profile_card1:hover {
+  background: url("../images/Sydney.jfif") right center no-repeat;
+  background-size: 130%;
+}
+.profile_card1:hover .profile_card_user_name {
+  opacity: 1;
+}
+.profile_card1:hover .profile_icon {
+  opacity: 1;
+}
+
+
+.profile_card_user_name {
+  text-align: end;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color:white;
+  mix-blend-mode: difference;
+  margin: 1.2rem;
+  opacity: 0;
+  transition: opacity 1s;
+  font-size:2rem;
+}
+.profile_icon {
+  opacity: 0;
+  font-size: 1.4rem;
+  margin: 0.4rem 0;
+  transition: opacity 1s;
+}
+.profile_icons {
+  position: absolute;
+  fill: #56056c;
+  color: white;
+  mix-blend-mode: difference;
+  right:2%;
+  height: 130px;
+  bottom:3%;
+  width: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profile_user_name{
+  margin-bottom:1rem;
+}
+
+.profile_user_name .profile_batch {
+  font-size : 0.5rem;
+  position: relative;
+  top:-1.3rem;
+  left:0.5rem;
+}
+
+
+
+
+
+
+/*////////////////////////////////////////////////*/
+
+.profile_menu_footer{
+  position: absolute;
+  left:0.1rem;
+  bottom:0;
+  width:100%;
+}
+
+.profile_menu {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+@media (max-width:1024px){
+  .profile_menu {
+    font-size: 0.7rem;
+  }
+  
+}
+
+.profile_menu:hover {
+  pointer-events: all;
+}
+.profile_label {
+  display: inline-block;
+  cursor: pointer;
+  pointer-events: all;
+}
+.profile_spacer {
+  display: inline-block;
+  width: 2rem;
+  margin-left: 0.7rem;
+  margin-right: 0.9rem;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+}
+.profile_spacer:before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid black;
+  height: 1px;
+  width: 0%;
+  transition: width 0.25s ease;
+  transition-delay: 0.7s;
+}
+
+@media (max-width:1024px){
+  .profile_menu {
+    font-size: 0.7rem;
+  }
+  .profile_spacer {
+    width:1rem;
+  }
+  
+}
+.profile_item {
+  position: relative;
+  display: inline-block;
+  margin-right: 1.5rem;
+  top: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease, top 0.5s ease;
+  transition-delay: 0;
+}
+.profile_menu_item {
+/*  opacity: 0;*/
+  transition: color 0.5s ease;
+}
+.profile_item:hover .profile_menu_item {
+  opacity: 1;
+  color: #ff0000;
+  
+}
+.profile_menu:hover .profile_spacer:before {
+  width: 100%;
+  transition-delay: 0s;
+}
+.profile_menu:hover .profile_item {
+  opacity: 1;
+  top: 0px;
+}
+.profile_item:nth-child(1) {
+  transition-delay: 0.45s;
+}
+.profile_item:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.profile_item:nth-child(3) {
+  transition-delay: 0.35s;
+}
+.profile_item:nth-child(4) {
+  transition-delay: 0.3s;
+}
+.profile_item:nth-child(5) {
+  transition-delay: 0.25s;
+}
+.profile_item:nth-child(6) {
+  transition-delay: 0.2s;
+}
+.profile_item:nth-child(7) {
+  transition-delay: 0.15s;
+}
+.profile_item:nth-child(8) {
+  transition-delay: 0.1s;
+}
+.profile_item:nth-child(9) {
+  transition-delay: 0.05s;
+}
+.profile_item:nth-child(10) {
+  transition-delay: 0s;
+}
+.profile_menu:hover .profile_item:nth-child(1) {
+  transition-delay: 0.25s;
+}
+.profile_menu:hover .profile_item:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.profile_menu:hover .profile_item:nth-child(3) {
+  transition-delay: 0.35s;
+}
+.profile_menu:hover .profile_item:nth-child(4) {
+  transition-delay: 0.4s;
+}
+.profile_menu:hover .profile_item:nth-child(5) {
+  transition-delay: 0.45s;
+}
+.profile_menu:hover .profile_item:nth-child(6) {
+  transition-delay: 0.5s;
+}
+.profile_menu:hover .profile_item:nth-child(7) {
+  transition-delay: 0.55s;
+}
+.profile_menu:hover .profile_item:nth-child(8) {
+  transition-delay: 0.6s;
+}
+.profile_menu:hover .profile_item:nth-child(9) {
+  transition-delay: 0.65s;
+}
+.profile_menu:hover .profile_item:nth-child(10) {
+
+  transition-delay: 0.7s;
+}
+
+
+
+
+.second__section {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(223, 22, 232);
+}
+
+.gallery_box{
+  width:17%;
+  height:37%;
+  background: #9f9;
+  margin: 0 3rem;
+  background-image: url("../images/noimage.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 2px solid #222;
+  border-radius: 1.5rem;
+}
+
+.third__section {
+  background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.forth__section {
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+
+.move_to_top{
+  position: absolute;
+  font-size: 1rem;
+  padding: 0.4rem;
+  font-weight: 900;
+  right:45%;
+  bottom:3%;
+  border: 4px solid #222;
+  border-radius: 1rem;
+  color:white;
+  opacity: 0;
+  transition: 2s;
+  cursor: pointer;
+  background: #222 ;
+}
+.move_to_top_show {
+  opacity: 1;
+  z-index: 999;
+  position: fixed;
+}
+
+/*navigator*/
+
+.navigator_stage{
+  opacity: 0;
+  position: absolute;
+  right: 0%;
+  top:1%;
+  height: 5%;
+  width: 13%;
+  transition: opacity 1s;
+}
+
+.navigator_stage_show {
+  opacity: 1;
+  z-index: 9999;
+  position: fixed;
+}
+  background: #2f2f
+}
+
+.second__section{
+}
+
+
+
