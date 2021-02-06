@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  cursor: none;
+  background-image: url(background-wall.jpg);
+  background-repeat: no-repeat;
+/*  background-position: center center;*/
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  width:90%;
+  min-height:10vh;
+  align-items: center;
+  margin: auto;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+
+}
+
+.nav-links li {
+  padding: 1rem;
+}
+
+.nav-links,h1 {
+  flex: 1;
+}
+
+
+.cursor {
+  width:4rem;
+  height:4rem;
+  background-image: url('loupe.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  
+  position: absolute;
+  transform:translate(-50%,-50%) rotate(-30deg);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background,transform;
+  transform-origin: 100% 100%;
+  z-index: -1;
+  backdrop-filter:grayscale();
+}
+
+
+.link-grow{
+  transform: scale(2);
+}
+
+.hovered-link{
+  color:tomato;
+}
+
+.front-cover img {
+  position: relative;
+  z-index: -3;
+}
