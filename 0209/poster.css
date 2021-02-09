@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap');
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+.gallery__poster {
+  width:250px;
+  height: 400px;
+  padding: 3rem 3rem 3rem 4rem;
+  border:2px solid #444;
+  border-width: 0.9rem;
+  position: relative;
+  box-shadow: 0px 16px 25px 2px #353535, 0px 22px 35px -30px rgba(155,155,155,0.14), 0px 39px 35px 12px #FFFFFF;
+  overflow: hidden;
+}
+
+.poster__header{
+  width:100%;
+  position: absolute;
+  top: 0.9rem;
+  left: 0.9rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.poster__aside{
+  position: absolute;
+  top:8rem;
+  left: 15px;
+  writing-mode: vertical-lr;
+  font-size: 1.2rem;
+}
+
+
+
+.poster__section {
+  width:100%;
+  height:100%;
+  background-image: url('/images/Sydney.jpg');
+  background-position: 50% 50%;
+  background-size:cover;
+  margin-top: 1rem
+}
+
+
+.poster__footer {
+  position: absolute;
+  font-size: 0.5rem
+}
+
+/* KEYFRAMES */
+
+
+ body {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 background: white;
+	 transform: translateY(-45px);
+}
+ .loader {
+	 display: inline-flex;
+	 flex-wrap: wrap;
+	 width: 90px;
+	 height: 90px;
+	 transform-style: preserve-3d;
+	 transform: rotateX(45deg) rotate(45deg);
+}
+ .box {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 30px;
+	 height: 30px;
+	 background: #fed750;
+	 box-shadow: 112.5px 112.5px 20px #000;
+	 animation: move 2s ease-in-out infinite both;
+	 transform-style: preserve-3d;
+}
+ .box:nth-child(1) {
+	 animation-delay: -1s;
+}
+ .box:nth-child(2) {
+	 animation-delay: -2s;
+}
+ .box:nth-child(3) {
+	 animation-delay: -3s;
+}
+ .box:before, .box:after {
+	 display: block;
+	 content: "";
+	 position: absolute;
+	 width: 30px;
+	 height: 30px;
+}
+ .box:before {
+	 top: 100%;
+	 left: 0;
+	 background: #e6a32f;
+	 transform-origin: center top;
+	 transform: rotateX(-90deg);
+}
+ .box:after {
+	 top: 0;
+	 left: 100%;
+	 background: #c87932;
+	 transform-origin: center left;
+	 transform: rotateY(90deg);
+}
+ @keyframes move {
+	 0%, 100% {
+		 transform: none;
+	}
+	 12.5% {
+		 transform: translate(30px, 0);
+	}
+	 25% {
+		 transform: translate(60px, 0);
+	}
+	 37.5% {
+		 transform: translate(60px, 30px);
+	}
+	 50% {
+		 transform: translate(60px, 60px);
+	}
+	 62.5% {
+		 transform: translate(30px, 60px);
+	}
+	 75% {
+		 transform: translate(0, 60px);
+	}
+	 87.5% {
+		 transform: translate(0, 30px);
+	}
+}
+ 
