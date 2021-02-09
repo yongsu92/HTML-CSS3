@@ -1,0 +1,13 @@
+body {
+  background-color: #a3d5d3;
+}
+
+@media print
+{ 
+  #gallery__body
+   {
+     display:none;
+   }
+}
+
+
