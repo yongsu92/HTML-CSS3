@@ -44,7 +44,7 @@ nav{
   position: absolute;
   transform:translate(-50%,-50%) rotate(-30deg);
   pointer-events: none;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   transition-property: background,transform;
   transform-origin: 100% 100%;
   z-index: -1;
