@@ -1,0 +1,61 @@
+*{
+  margin:0;
+  padding:0;
+}
+body {
+/*  align-items: center;*/
+}
+.scroll-slide {
+  width:10rem;
+  height:20rem;
+}
+
+.scroll-wrapper{
+  position: absolute;
+  left: -30%;
+/*  right: 10px;*/
+  display: flex;
+  flex-direction:row;
+  transform-origin: top left;
+  transform:rotate(90deg) translateY(-100vh);
+  overflow-x: auto;
+  width:400vw;
+}
+
+.one {
+  background: #222;
+}
+.two {
+    background: #333;
+
+}
+.three {
+    background: #444;
+
+}
+.four {
+    background: #555;
+
+}
+
+.five {
+    background: #666;
+
+}
+
+.outer-wrapper {
+  position: relative;
+  width:100vh;
+  height:100vw;
+  transform:rotate(-90deg) translateX(-100vh);
+  transform-origin:top left;
+  overflow-y: scroll;
+/*  overflow-x:hidden;*/
+  position: absolute;
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+} 
+
+::-webkit-scrollbar {
+  width: 0;
+}
