@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.my_works  {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 900px;
+}
+
+.poster_card1 {
+  padding:7rem 7rem 4rem;
+  margin:0 5rem;
+  background-image: url('poster.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  transform-style: preserve-3d;
+  width: 33rem;
+  height: 45rem;
+/*  background: linear-gradient(rgb(225,150,58),rgb(227,144,91));*/
+  transition:.6s;
+  transform: rotatex(75deg) translatey(-400px) translatez(-500px) perspective(1200px);
+  box-shadow: 0px 20px 60px rgba(0,0,0, 0.5);
+}
+.poster_card1:hover{
+  transform: rotatex(0deg) translateZ(-100px) scale(1.2)  translatey(100px);
+  transition:.6s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.poster_card1 img{
+  width: 100%;
+  height: 100%;
+/*  transform: translateY(15px);*/
+/*  width:200px;*/
+/*  height:120px;*/
+}
+.my_works h3{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size:3rem;
+  margin: 0;
+  font-family: 'Abel', sans-serif;
+  text-shadow: 0 0 2px rgb(255,255,255);
+}
+
+.my_works p{
+  position: absolute;
+  top:20%;
+  writing-mode: vertical-lr;
+  margin: 0;
+  left: 2.3%;
+  background: white;
+  font-family: 'Abel', sans-serif;
+  font-weight: 600;
+  text-align:center;
+  transform: translatex(12px);
+}
+
+
+.poster_card2 {
+  margin:0 5rem;
+  padding:7rem 7rem 4rem;
+
+  position: relative;
+  transform-style: preserve-3d;
+  width: 33rem;
+  height: 45rem;
+  background-image: url('poster.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: animate 1s linear infinite;
+  transition:.6s;
+  
+  transform: rotatex(75deg) translatey(-400px) translatez(-500px) perspective(1200px);
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+}
+.poster_card2:hover{
+  transform: rotatex(0deg) translateZ(-100px) scale(1.2)  translatey(100px);
+  transition:.6s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.poster_card2 img{
+  width: 100%;
+  height: 100%;
+}
