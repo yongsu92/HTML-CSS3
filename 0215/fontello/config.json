@@ -1,0 +1,190 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "d870630ff8f81e6de3958ecaeac532f2",
+      "css": "left-open",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "399ef63b1e23ab1b761dfbb5591fa4da",
+      "css": "right-open",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "b59b3b618699b467541f631edd5a02ed",
+      "css": "volume",
+      "code": 59394,
+      "src": "elusive"
+    },
+    {
+      "uid": "2f750a9be253e8e451209574336e7020",
+      "css": "mute",
+      "code": 59395,
+      "src": "entypo"
+    },
+    {
+      "uid": "ef51920c7a9bed4d87f53709db115e34",
+      "css": "sound",
+      "code": 59396,
+      "src": "entypo"
+    },
+    {
+      "uid": "1e099a876c8a6a83f10c9bafa9886614",
+      "css": "mic",
+      "code": 59397,
+      "src": "entypo"
+    },
+    {
+      "uid": "2d76f2c8d13be40694ecadfea7fb83c3",
+      "css": "logout",
+      "code": 59398,
+      "src": "entypo"
+    },
+    {
+      "uid": "23912d5623126e14b7b137c3ba557168",
+      "css": "bookmark",
+      "code": 59399,
+      "src": "entypo"
+    },
+    {
+      "uid": "fda731b5a4026685e1a9c7e64228e2b2",
+      "css": "note-beamed",
+      "code": 59400,
+      "src": "entypo"
+    },
+    {
+      "uid": "39e2e6682c28e1e3b5f49825a19717c4",
+      "css": "note",
+      "code": 59401,
+      "src": "entypo"
+    },
+    {
+      "uid": "c9b928dc82d7d77033644fcf59dca3b3",
+      "css": "flashlight",
+      "code": 59402,
+      "src": "entypo"
+    },
+    {
+      "uid": "0eabe5f8d71cc838484ff39436426d2d",
+      "css": "heart",
+      "code": 59403,
+      "src": "entypo"
+    },
+    {
+      "uid": "d18071bbf8f0a8cec8d1f556c91c6af0",
+      "css": "heart-empty",
+      "code": 59404,
+      "src": "entypo"
+    },
+    {
+      "uid": "6274e0601f2feef7eced89146e708de0",
+      "css": "user-add",
+      "code": 59405,
+      "src": "entypo"
+    },
+    {
+      "uid": "25fc99a30fecc4021fdcae5fff5ba9ac",
+      "css": "eye",
+      "code": 59406,
+      "src": "entypo"
+    },
+    {
+      "uid": "bc64550dd022ce21604f97309b346cea",
+      "css": "cog",
+      "code": 59407,
+      "src": "entypo"
+    },
+    {
+      "uid": "2c5335c6e56b876139d7a58ab2f4b2fe",
+      "css": "bell",
+      "code": 59408,
+      "src": "entypo"
+    },
+    {
+      "uid": "2c0b53280f82068f6bab4e2200025d9f",
+      "css": "chat",
+      "code": 59409,
+      "src": "entypo"
+    },
+    {
+      "uid": "366c3c56b79031deacc953d7f92085e5",
+      "css": "eye-outline",
+      "code": 59410,
+      "src": "typicons"
+    },
+    {
+      "uid": "d139ce97a43aedd333fa40f776328c3c",
+      "css": "user-delete",
+      "code": 59411,
+      "src": "typicons"
+    },
+    {
+      "uid": "344c1c070cd0018ced51d3f051c6f4dd",
+      "css": "user-delete-outline",
+      "code": 59412,
+      "src": "typicons"
+    },
+    {
+      "uid": "ce5e29aa5208417700e7f7012a236c00",
+      "css": "undo",
+      "code": 59413,
+      "src": "iconic"
+    },
+    {
+      "uid": "uetwmlvm6z9eaot1t74vvsgrte9vwi0n",
+      "css": "bullhorn",
+      "code": 59414,
+      "src": "modernpics"
+    },
+    {
+      "uid": "id8wp0cygl9trzbhlbd9o0fygiesi629",
+      "css": "search",
+      "code": 59415,
+      "src": "modernpics"
+    },
+    {
+      "uid": "fhpup8jff2yw9kmuwavhyqxogczcbbhj",
+      "css": "dollar",
+      "code": 59416,
+      "src": "modernpics"
+    },
+    {
+      "uid": "5dc427ad9f0644447ca5292911c378f1",
+      "css": "mic-off",
+      "code": 61511,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "858e967d1c67608546add6beebade5b3",
+      "css": "mic-1",
+      "code": 61512,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "484b4ad2058d17849f205c4054b6f315",
+      "css": "cog-1",
+      "code": 59417,
+      "src": "linecons"
+    },
+    {
+      "uid": "026007bd17bfc67f3fe013199676f620",
+      "css": "dollar-1",
+      "code": 61781,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3ba4275937db277075fc47d6b5a69a2e",
+      "css": "back",
+      "code": 59418,
+      "src": "entypo"
+    }
+  ]
+}

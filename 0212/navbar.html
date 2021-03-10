@@ -11,30 +11,53 @@
   <nav class="nav">
     <input type="checkbox" class="nav__cb" id="menu-cb" />
     <div class="nav__content">
-      <ul class="nav__items">
+      <ul class="nav__items"  v-if="loginState">
         <li class="nav__item">
           <span class="nav__item-text">
-            Home
+           <router-link  class="router" to="/listitem">Works</router-link>
           </span>
         </li>
         <li class="nav__item">
           <span class="nav__item-text">
-            Works
+            <router-link  class="router" to="/gallerycategory">Gallery</router-link>
           </span>
         </li>
         <li class="nav__item">
           <span class="nav__item-text">
-            About
+            <router-link  class="router" to="/mypage">Mypage</router-link>
           </span>
         </li>
         <li class="nav__item">
           <span class="nav__item-text">
-            Contact
+            <router-link  class="router" to="/about">About</router-link>
+          </span>
+        </li>
+          <li class="nav__item">
+          <span class="nav__item-text">
+            <a  href="#" @click="logout">Logout</a>
           </span>
         </li>
       </ul>
+      <ul class="nav__items" v-else>
+      <router-link class="nav-item" to="/loginsignup">Login & Signup</router-link>
+      </ul>
+      
     </div>
     <label class="nav__btn" for="menu-cb"></label>
   </nav>
   </div>
+  <script>
+  const menuBtn = document.querySelector('.nav__items');
+  
+  menuBtn.addEventListener('click',function(e){
+    const radioBtn = document.querySelector('.nav__cb')
+    if(radioBtn.checked){
+    radioBtn.checked = false;
+      
+    }else{
+    radioBtn.checked = true;
+      
+    }
+  })
+  </script>
 </body></html>
