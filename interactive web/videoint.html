@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      position: absolute;
+    }
+    .vod {
+      position: absolute;
+
+    }
+  </style>
+  <script>
+    // let cursor__item;
+    let x = 0;
+    let y = 0;
+    let mouseX = 0;
+    let mouseY = 0;
+    let speed = 0.01;
+    let _img;
+    let _bird;
+    window.onload =function (){
+      _img = document.getElementsByTagName('img');
+      _bird = document.getElementsByClassName('vod')[0];
+      window.addEventListener('mousemove',movefunc,false);
+
+      function movefunc(e) {
+
+        x = (e.clientX - window.innerWidth/2);
+        y = (e.clientY - window.innerHeight/2);
+        
+        // console.log(e.clientX, e.clientY);
+      }
+      loop();
+    }
+    function loop(){
+      mouseX += (x - mouseX) * speed;
+      mouseY += (y - mouseY) *speed;
+      _img[0].style.transform = "translate("+ -(mouseX/10)+"px,"+ -(mouseY/10) +"px)"
+      _img[1].style.transform = "translate("+ -(mouseX/5)+"px,"+ -(mouseY/5) +"px)"
+      _img[2].style.transform = "translate("+ -(mouseX/3)+"px,"+ -(mouseY/3) +"px)"
+      _img[3].style.transform = "translate("+ -(mouseX/1)+"px,"+ -(mouseY/1) +"px)"
+      
+      _bird.style.transform = "translate("+ -(mouseX/5)+"px,"+ -(mouseY/5) +"px)"
+
+      window.requestAnimationFrame(loop);
+    }
+    
+  
+  </script>
+</head>
+<body>
+  <!-- <h1>test</h1> -->
+  <!-- <div class="cursor__item"></div> -->
+   <!-- <img src="./layer-7.png" class="human" alt="Her"> -->
+   <!-- <img src="./layer-1.jpg" class="bg" alt="벽"> -->
+  <section>
+    <img src="https://paidpost-assets.nyt.com/paidpost/allbirds/birds-eye-view/images/1-b90e91a4.png">
+    
+    <img src="https://paidpost-assets.nyt.com/paidpost/allbirds/birds-eye-view/images/2-f3fd6cf5.png">
+    
+    <div class="vod"><video autoplay="" playsinline="" loop="" muted="" src="https://paidpost-assets.nyt.com/paidpost/allbirds/birds-eye-view/videos/3-27c8c3ea.webm"></video></div>
+    
+    <img src="https://paidpost-assets.nyt.com/paidpost/allbirds/birds-eye-view/images/4-105dd65b.png">
+    
+    <img src="https://paidpost-assets.nyt.com/paidpost/allbirds/birds-eye-view/images/5-ac49bfdc.png">
+  </section>
+</body>
+</html>
