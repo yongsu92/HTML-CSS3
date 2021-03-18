@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+      height: 300vh;
+    }
+    .scrollPosition {
+      width: 300px;
+      height: 300px;
+      border: 5px solid salmon;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 300px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 3rem;
+      font-weight: 600
+    }
+  </style>
+</head>
+
+<body>
+  scroll
+  <div class='scrollPosition'></div>
+  <script>
+    const scrollPosition = document.querySelector('.scrollPosition');
+    window.addEventListener('scroll', function() {
+      scrollPosition.innerHTML = window.scrollY;
+    })
+  </script>
+</body></html>
