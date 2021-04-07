@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: black;
+      position: relative;
+      cursor: none;
+    }
+
+    h1 {
+      color: white;
+    }
+
+    .cursor__item {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: salmon;
+      /* border-radius: 50%; */
+      top: 0;
+      left: 0;
+      margin: -50px 0 0 -50px;
+      transition: .7s all cubic-bezier(0.865, 0.005, 0.215, 1.000);
+    }
+
+    .button {
+      width: 300px;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 600;
+      background-color: white;
+      color: tomato;
+      padding: 30px 80px;
+      margin: 50px;
+      cursor: pointer;
+      transition: .7s all cubic-bezier(0.865, 0.005, 0.215, 1.000);
+    }
+
+    .button:hover {
+      background-color: salmon;
+      color: white;
+      font-size: 100px;
+      padding: 100px 200px;
+    }
+  </style>
+  <script>
+    let cursor__item;
+    let h1;
+    let x = 0;
+    let y = 0;
+    let mouseX = 0;
+    let mouseY = 0;
+    let speed = 0.05;
+    window.onload =function (){
+      // h1 = document.getElementsByTagName('h1')[0];
+      cursor__item = document.getElementsByClassName('cursor__item')[0];
+      window.addEventListener('click',movefunc,false);
+
+      function movefunc(e) {
+        x = e.clientX;
+        y = e.clientY;
+        cursor__item.style.transform = "translate("+x+"px,"+y +"px)"    
+        // console.log(e.clientX, e.clientY);
+      }
+      // loop();
+    }
+    // function loop(){
+    //   mouseX += (x - mouseX) * speed;
+    //   mouseY += (y - mouseY) *speed;
+    //   h1.innerHTML = "x:" + x + "mx:" + mouseX;
+    //   cursor__item.style.transform = "translate("+mouseX+"px,"+mouseY +"px)"
+    //   window.requestAnimationFrame(loop);
+    // }
+    
+  
+  </script>
+</head>
+<body>
+  <!-- <h1>test</h1> -->
+  <div class="cursor__item"></div>
+  <div class="button">start</div>
+</body>
+</html>
