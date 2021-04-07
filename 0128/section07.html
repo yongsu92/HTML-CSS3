@@ -6,34 +6,24 @@
 </head>
 
 <body>
-  <button id="getLocation" type="button">위치 정보 수집</button>
-<!--  <div id="map" style="width:500px; height: 500px;display: block;"></div>-->
-
+  <button id="MyLocation" type="button">내 위치</button>
   <script>
     (function() {
-     
-      function successCallback(position) {
+      function success(position) {
         let pos = {
           lat: position.coords.latitude,
           lng: position.coords.longitude
         };
-//        infoWindow.setPosition(pos);
-//        map.setCenter(pos);
         localStorage.setItem("lat",pos.lat);
         localStorage.setItem("lng",pos.lng);
-        alert("Your current position is: latitude(" + pos.lat + "), longitude(" + pos.lng + ")");
+        alert("현재 위치: latitude(" + pos.lat + "), longitude(" + pos.lng + ")");
       }
-
-      function errorCallback(error) {
+      function error(error) {
         alert("Error: " + error.message);
       }
-      document.getElementById("getLocation").onclick = function() {
-        navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+      document.querySelector("#MyLocation").onclick = function() {
+        navigator.geolocation.getCurrentPosition(success, error);
       };
     }());
   </script>
-<!--
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_dqv49EcmRFtmf6RhY4vekC5Mw43Puxw&callback=initMap"
-  type="text/javascript"></script>
--->
 </body></html>
